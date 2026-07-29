@@ -61,8 +61,8 @@ export const team: TeamMember[] = [
       "Portrait of Dr. Kenya Dugger, Managing Partner & Chief People & Culture Officer.",
     initials: "KD",
     bio: [
-      "Dr. Kenya Dugger is Managing Partner of Morris Consulting Group and its Chief People & Culture Officer. She leads the firm's work at the intersection of organizational culture, executive development, and human capital strategy — the disciplines that determine whether sound strategy is actually carried out.",
-      "Her counsel helps leadership teams build the culture, capability, and continuity an institution needs to endure, in service of the firm's conviction that performance follows the character of its people. Full biography forthcoming.",
+      "Dr. Kenya Dugger is Managing Partner of Morris Consulting Group and its Chief People & Culture Officer. He leads the firm's work at the intersection of organizational culture, executive development, and human capital strategy — the disciplines that determine whether sound strategy is actually carried out.",
+      "His counsel helps leadership teams build the culture, capability, and continuity an institution needs to endure, in service of the firm's conviction that performance follows the character of its people. Full biography forthcoming.",
     ],
     bioNote: "Full biography forthcoming.",
     credentials: [
