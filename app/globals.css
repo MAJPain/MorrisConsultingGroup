@@ -104,7 +104,7 @@
   /* Feather all four edges so a portrait blends into the page background
      instead of sitting in a hard rectangle. --feather controls the fade width. */
   .feather-edges {
-    --feather: 14%;
+    --feather: 5%;
     -webkit-mask-image: linear-gradient(
         to right,
         transparent 0,
