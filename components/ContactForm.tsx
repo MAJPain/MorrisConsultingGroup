@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { contactFormAccessKey } from "@/content/site";
 
 type FieldName = "name" | "email" | "organization" | "message";
 
@@ -12,21 +13,32 @@ type FormState = Record<FieldName, string>;
 const EMPTY: FormState = { name: "", email: "", organization: "", message: "" };
 
 /**
- * Contact form with underline-only fields and floating monospace labels.
- * This is a front-end scaffold: on submit it validates and shows a
- * confirmation state. Wire `onSubmit` to an email service or route handler
- * to deliver messages.
+ * Contact form with underline-only fields and floating labels.
+ * Submissions are delivered by Web3Forms (https://web3forms.com): the form
+ * POSTs to their API with a public access key, and they email each message
+ * to the address that key is registered to. Set the key in
+ * NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY (see .env.example). Success is shown only
+ * after the send actually succeeds.
  */
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+// Env var overrides the committed config key if set; otherwise use the
+// (public-by-design) key from content/site.ts so it works on any deploy.
+const ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? contactFormAccessKey;
+
 export function ContactForm() {
   const [values, setValues] = useState<FormState>(EMPTY);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const update = (name: FieldName, value: string) =>
     setValues((v) => ({ ...v, [name]: value }));
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (sending) return;
+
     if (!values.name.trim() || !values.email.trim() || !values.message.trim()) {
       setError("Please complete your name, email, and a brief message.");
       return;
@@ -35,9 +47,47 @@ export function ContactForm() {
       setError("Please enter a valid email address.");
       return;
     }
+    if (!ACCESS_KEY) {
+      setError(
+        "The contact form isn’t configured to send yet. Please email us directly in the meantime."
+      );
+      return;
+    }
+
     setError(null);
-    // Replace with a real submission (route handler / email service).
-    setSubmitted(true);
+    setSending(true);
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: ACCESS_KEY,
+          subject: `New inquiry — ${values.name.trim()}`,
+          from_name: "Morris Consulting Group — Website",
+          name: values.name.trim(),
+          email: values.email.trim(),
+          organization: values.organization.trim() || "—",
+          message: values.message.trim(),
+        }),
+      });
+      const data: { success?: boolean } = await res.json();
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setError(
+          "Something went wrong sending your note. Please try again, or email us directly."
+        );
+      }
+    } catch {
+      setError(
+        "We couldn’t reach the server. Please check your connection and try again."
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
@@ -103,12 +153,14 @@ export function ContactForm() {
       )}
 
       <div>
-        <Button type="submit" size="lg" className="group">
-          Send your note
-          <ArrowRight
-            size={18}
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
+        <Button type="submit" size="lg" className="group" disabled={sending}>
+          {sending ? "Sending…" : "Send your note"}
+          {!sending && (
+            <ArrowRight
+              size={18}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          )}
         </Button>
       </div>
     </form>

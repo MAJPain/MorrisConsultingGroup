@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { essays } from "@/content/insights";
 
-const base = "https://www.morrisconsultinggroup.com";
+const base = "https://morrisconsultinggroup.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/about", "/advisory", "/team", "/insights", "/contact"].map(

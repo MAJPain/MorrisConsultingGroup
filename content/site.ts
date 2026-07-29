@@ -3,6 +3,16 @@
  * Edit here — components read from these exports.
  */
 
+/**
+ * Web3Forms access key for the contact form. This value is PUBLIC by design —
+ * it is embedded in the client bundle and only permits sending mail to the
+ * inbox it is registered to (it exposes no data and grants no other access).
+ * Safe to commit. To rotate it, generate a new key at https://web3forms.com
+ * and replace the string below. An optional NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+ * environment variable overrides this value if set.
+ */
+export const contactFormAccessKey = "fe6d7419-cff7-4f91-978d-d67885288b13";
+
 export const firm = {
   name: "Morris Consulting Group",
   shortName: "MCG",
@@ -11,7 +21,7 @@ export const firm = {
   location: "Oxford, Mississippi",
   locationShort: "Oxford, MS",
   tagline: "Counsel for leaders navigating what comes next.",
-  email: "inquiries@morrisconsultinggroup.com",
+  email: "inquiries@morrisconsultinggroup.org",
   phone: "",
 } as const;
 

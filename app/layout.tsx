@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { CustomCursor } from "@/components/CustomCursor";
 
-const siteUrl = "https://www.morrisconsultinggroup.com";
+const siteUrl = "https://morrisconsultinggroup.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
