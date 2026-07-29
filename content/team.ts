@@ -36,16 +36,14 @@ export const team: TeamMember[] = [
     imageAlt: "Portrait of Sheldon Morris, Founder & Principal of Morris Consulting Group.",
     initials: "SM",
     bio: [
-      "Sheldon Morris is the founder and principal of Morris Consulting Group, a boutique advisory practice serving chief executives and boards of directors. He established the firm in 2017 after a twenty-two-year career as an officer in the United States Army, retiring at the rank of Colonel.",
-      "His counsel is shaped by two decades of command experience, a discipline for governance, and a conviction that enterprise performance is inseparable from the character of leadership. He advises clients on board effectiveness, executive succession, strategic clarity, and the quiet work of building institutions that endure.",
-      "Sheldon lives and works in Oxford, Mississippi.",
+      "Sheldon Morris founded Morris Consulting Group in 2017 and serves as its principal. The firm counsels chief executives, boards of directors, and the senior leaders around them on governance, enterprise performance, and executive succession. Its engagements are private and selective, taken on where the direction of an organization is genuinely at stake.",
+      "He has held high-stakes leadership positions at home and abroad, alongside allies and partners. His sixteen years in executive leadership include roles as chief operating officer, chief of staff, and senior advisor, guiding leaders across the nonprofit, for-profit, and banking sectors.",
+      "His counsel is direct and practical. He works with leaders on how decisions get made and how executives are held to account, and he expects leaders at every level to invest in their people's potential early and often. That is how an organization prepares the leadership that follows.",
     ],
     credentials: [
       "U.S. ARMY / COLONEL (RET.) / 22 YEARS",
-      "FOUNDER & PRINCIPAL / MORRIS CONSULTING GROUP / EST. 2017",
       "CERTIFIED COMMUNITY BANK DIRECTOR",
-      "OLE MISS ALUMNI ASSOCIATION / BOARD MEMBER",
-      "BASED IN OXFORD, MISSISSIPPI",
+      "COURT APPOINTED SPECIAL ADVOCATES (CASA) / BOARD MEMBER",
     ],
     pullQuote:
       "Enterprise performance is inseparable from the character of leadership.",
