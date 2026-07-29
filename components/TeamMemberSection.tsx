@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { TeamMember } from "@/content/team";
 import { SectionLabel } from "@/components/SectionLabel";
 import { SplitSection } from "@/components/SplitSection";
+import { Portrait } from "@/components/Portrait";
 import { FramedPortrait } from "@/components/FramedPortrait";
 import { RevealText } from "@/components/RevealText";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -22,14 +23,22 @@ export function TeamMemberSection({ member, index }: TeamMemberSectionProps) {
   const imageSide = index % 2 === 0 ? "left" : "right";
   const isPlaceholder = member.variant === "placeholder";
 
-  const portrait = (
+  // Reserved slots keep the designed, framed placeholder box; slots with a
+  // real photo render frameless with softly feathered edges.
+  const portrait = isPlaceholder ? (
     <FramedPortrait
       frameSide={imageSide === "left" ? "right" : "left"}
-      src={isPlaceholder ? undefined : member.imagePath}
+      placeholderMark="&"
+      placeholderLabel="TO BE ANNOUNCED"
+      alt={member.role}
+      sizes="(max-width: 768px) 100vw, 42vw"
+    />
+  ) : (
+    <Portrait
+      feather
+      src={member.imagePath}
       alt={member.imageAlt ?? member.role}
-      initials={isPlaceholder ? undefined : member.initials}
-      placeholderMark={isPlaceholder ? "&" : undefined}
-      placeholderLabel={isPlaceholder ? "TO BE ANNOUNCED" : "PORTRAIT FORTHCOMING"}
+      initials={member.initials}
       priority={index === 0}
       sizes="(max-width: 768px) 100vw, 42vw"
     />

@@ -16,6 +16,8 @@ type PortraitProps = {
   /** When no initials are given, show this serif mark instead (e.g. "&"). */
   placeholderMark?: string;
   duotone?: boolean;
+  /** Feather the photo's edges so it blends into the page background. */
+  feather?: boolean;
   priority?: boolean;
   className?: string;
   sizes?: string;
@@ -33,6 +35,7 @@ export function Portrait({
   placeholderLabel = "PORTRAIT FORTHCOMING",
   placeholderMark,
   duotone = false,
+  feather = false,
   priority = false,
   className,
   sizes = "(max-width: 768px) 100vw, 45vw",
@@ -40,11 +43,14 @@ export function Portrait({
   const reduce = useReducedMotion();
   const [failed, setFailed] = useState(false);
   const showImage = Boolean(src) && !failed;
+  // Feathering only applies to a real photo; the placeholder keeps its panel.
+  const feathered = feather && showImage;
 
   return (
     <div
       className={cn(
-        "relative aspect-[4/5] w-full overflow-hidden bg-bone-white",
+        "relative aspect-[4/5] w-full",
+        feathered ? "feather-edges" : "overflow-hidden bg-bone-white",
         className
       )}
     >

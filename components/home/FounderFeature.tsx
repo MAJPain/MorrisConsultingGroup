@@ -1,6 +1,6 @@
 import { SectionLabel } from "@/components/SectionLabel";
 import { SplitSection } from "@/components/SplitSection";
-import { FramedPortrait } from "@/components/FramedPortrait";
+import { Portrait } from "@/components/Portrait";
 import { RevealText } from "@/components/RevealText";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLink } from "@/components/ArrowLink";
@@ -18,14 +18,14 @@ export function FounderFeature() {
           imageSide="left"
           align="center"
           image={
-            <FramedPortrait
-              frameSide="right"
+            <Portrait
+              feather
               src={founder?.imagePath}
               alt={founder?.imageAlt ?? "Sheldon Morris"}
               initials={founder?.initials}
               priority
               sizes="(max-width: 768px) 100vw, 45vw"
-              wrapperClassName="mx-auto max-w-md md:mx-0"
+              className="mx-auto max-w-md md:mx-0"
             />
           }
         >
