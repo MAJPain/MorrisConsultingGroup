@@ -17,7 +17,7 @@ export function InsightsPreview() {
               INSIGHTS
             </SectionLabel>
             <h2 className="max-w-xl text-editorial-sm font-medium tracking-tight text-deep-blue">
-              Notes on governance and leadership.
+              Notes on leadership and the enterprise.
             </h2>
           </div>
           <div className="shrink-0">

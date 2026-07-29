@@ -11,7 +11,7 @@ import { marqueeItems } from "@/content/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Morris Consulting Group is a boutique advisory firm founded in 2017, built to bring the discipline of command to the counsel of chief executives and boards.",
+    "Morris Consulting Group is a boutique advisory firm founded in 2017, built to bring the judgment of senior executive experience to the counsel of chief executives and boards.",
 };
 
 export default function AboutPage() {

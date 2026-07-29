@@ -11,7 +11,7 @@ import { marqueeItems } from "@/content/site";
 export const metadata: Metadata = {
   title: "Advisory",
   description:
-    "Morris Consulting Group advises on board governance, enterprise performance, executive succession, and organizational leadership.",
+    "Morris Consulting Group advises chief executives and boards on operating effectiveness, enterprise performance, executive succession, organizational leadership, and resilience.",
 };
 
 export default function AdvisoryPage() {

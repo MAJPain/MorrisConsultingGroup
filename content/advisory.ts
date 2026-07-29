@@ -3,8 +3,8 @@
 export const advisoryHeader = {
   eyebrow: "ADVISORY",
   title: "The counsel we offer.",
-  subtitle: "Four practices, held to one standard.",
-  lede: "We work across four related practices. Each begins with the same question: what does this enterprise need in order to endure — and who will decide it?",
+  subtitle: "Five practices, held to one standard.",
+  lede: "We work across five related practices. Each begins with the same question: what does this enterprise need in order to endure — and who will decide it?",
 } as const;
 
 export type PracticeDetail = {
@@ -18,18 +18,17 @@ export type PracticeDetail = {
 export const practiceDetails: PracticeDetail[] = [
   {
     number: "01",
-    title: "Board Governance & Effectiveness",
-    summary:
-      "Helping boards see themselves clearly — and hold themselves to a standard.",
+    title: "Operating Effectiveness",
+    summary: "How a leadership team decides, and how the enterprise runs day to day.",
     body: [
-      "A board's effectiveness is rarely a matter of talent. It is a matter of clarity: about where authority sits, how decisions are made, and what the board owes the enterprise that management cannot supply.",
-      "We conduct candid, confidential reviews of how a board actually works, and counsel chairs and directors on the structure, cadence, and culture that turn a capable board into an effective one.",
+      "A sound strategy still has to be run. Most of the distance between intent and results is covered in the operating room: how the executive team meets, where authority actually sits, and how decisions are made and revisited.",
+      "We work with chief executives and their teams to sharpen that machinery: the decision rights, the operating cadence, and the executive office that keeps an enterprise moving with clarity rather than friction.",
     ],
     engagements: [
-      "Board effectiveness reviews",
-      "Governance structure & committee design",
-      "Chair & director counsel",
-      "New-board formation",
+      "Executive team effectiveness",
+      "Decision rights & authority",
+      "Operating cadence & business rhythm",
+      "The executive office & chief of staff function",
     ],
   },
   {
@@ -75,6 +74,21 @@ export const practiceDetails: PracticeDetail[] = [
       "Executive & leadership development",
       "Human capital strategy",
       "Institution-building counsel",
+    ],
+  },
+  {
+    number: "05",
+    title: "Resilience & Crisis Leadership",
+    summary: "Leading with a steady hand when the stakes are highest.",
+    body: [
+      "The measure of an institution is how it performs under strain. Disruption is rarely a question of if, and the organizations that come through it best are the ones that prepared before it arrived.",
+      "We help leaders build that readiness and lead through disruption when it comes: steadying the team, protecting what matters, and making sound decisions with incomplete information, so a crisis tests the institution without defining it.",
+    ],
+    engagements: [
+      "Crisis preparedness & scenario planning",
+      "Leadership through disruption",
+      "Business continuity & resilience",
+      "Post-crisis review & recovery",
     ],
   },
 ];

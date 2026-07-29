@@ -12,7 +12,7 @@ export const story = {
   label: "THE STORY",
   heading: "We began where the stakes are highest.",
   body: [
-    "Morris Consulting Group was established in 2017 by Sheldon Morris, following a twenty-two-year career as an officer in the United States Army. The firm was built to bring the discipline of command — clear thinking under pressure, respect for institutions, an instinct for consequence — to the counsel of chief executives and boards.",
+    "Morris Consulting Group was established in 2017 by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the counsel of chief executives and boards: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
     "We are, by design, a boutique. We take on a small number of engagements so that each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
     "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
   ],
@@ -24,7 +24,7 @@ export const philosophy = {
   statement:
     "Enterprise performance is inseparable from the character of leadership.",
   body: [
-    "We do not believe in strategy divorced from the people asked to carry it out, or in governance treated as a compliance exercise. The health of an enterprise is finally a question of judgment — of who decides, how they decide, and whether they hold themselves to a standard when no one is watching.",
+    "We do not believe in strategy divorced from the people asked to carry it out, or in oversight reduced to a compliance exercise. The health of an enterprise is finally a question of judgment — of who decides, how they decide, and whether they hold themselves to a standard when no one is watching.",
     "Our role is to help leaders see their situation plainly and act on it with discipline. We bring candor where candor is scarce, and patience where haste would do harm.",
   ],
 } as const;

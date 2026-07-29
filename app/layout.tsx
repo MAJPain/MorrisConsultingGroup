@@ -16,12 +16,14 @@ export const metadata: Metadata = {
     template: `%s — ${firm.name}`,
   },
   description:
-    "Morris Consulting Group is a boutique advisory firm counseling chief executives and boards of directors on governance, enterprise performance, and strategic leadership. Founded 2017 in Oxford, Mississippi.",
+    "Morris Consulting Group is a boutique advisory firm counseling chief executives and boards of directors on operating effectiveness, enterprise performance, executive succession, and organizational resilience. Founded 2017 in Oxford, Mississippi.",
   keywords: [
-    "board governance",
+    "operating effectiveness",
     "executive advisory",
     "enterprise performance",
     "succession planning",
+    "organizational resilience",
+    "crisis leadership",
     "boutique advisory firm",
     "Oxford Mississippi",
   ],
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: `${firm.name} — Advisory to CEOs & Boards`,
     description:
-      "Counsel for leaders navigating what comes next. Governance, enterprise performance, and executive advisory.",
+      "Counsel for leaders navigating what comes next. Operating effectiveness, enterprise performance, and executive succession.",
     siteName: firm.name,
   },
   robots: { index: true, follow: true },

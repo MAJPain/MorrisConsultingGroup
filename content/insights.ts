@@ -23,50 +23,54 @@ export type Essay = {
 
 export const essays: Essay[] = [
   {
-    slug: "the-quiet-work-of-governance",
-    title: "The quiet work of governance",
-    dek: "Why the best boards are the ones you never hear about.",
-    topic: "GOVERNANCE",
+    slug: "leading-when-the-ground-shifts",
+    title: "Leading when the ground shifts",
+    dek: "Resilience is built before the crisis, not during it.",
+    topic: "RESILIENCE",
     date: "June 2025",
     datetime: "2025-06-12",
-    readingTime: "6 min read",
+    readingTime: "5 min read",
     author: "Sheldon Morris",
     body: [
       {
         type: "paragraph",
-        text: "Governance rarely announces itself. When a board is working as it should, the enterprise simply moves with a certain steadiness — decisions are made in season, authority is exercised without drama, and the institution absorbs shocks that would unsettle a lesser one. The absence of noise is not the absence of work. It is the work.",
-      },
-      {
-        type: "paragraph",
-        text: "The boards that struggle are seldom short of talent. They are short of clarity: about who decides, about what the board owes the enterprise that the management cannot supply, and about the difference between oversight and interference. These are not questions of intelligence. They are questions of discipline.",
+        text: "Every organization is tested eventually. The test rarely arrives on schedule, and it seldom takes the shape anyone rehearsed. What separates the institutions that come through from the ones that do not is not the absence of disruption. It is what they built before the disruption arrived.",
       },
       {
         type: "heading",
-        text: "Oversight is a posture, not an event",
+        text: "Resilience is decided early",
       },
       {
         type: "paragraph",
-        text: "A board that treats governance as a quarterly ritual will find itself perpetually behind the enterprise it is meant to steward. The material questions — succession, risk, the integrity of the strategy — do not arrive on the calendar. They accumulate quietly and then present themselves all at once, usually at the least convenient hour.",
+        text: "From the outside, resilience can look like luck. Inside, it is the product of unglamorous choices made in calm weather: a leadership team that knows how it will decide when information is scarce, a balance sheet with room to absorb a shock, a culture candid enough to surface bad news while it is still small. None of it can be assembled once the ground is already moving.",
       },
       {
         type: "pullquote",
-        text: "The absence of noise is not the absence of work. It is the work.",
+        text: "From the outside, resilience can look like luck. Inside, it is decided early.",
       },
       {
         type: "paragraph",
-        text: "The remedy is not more meetings. It is a board that understands its own standard and holds to it between meetings — that knows what it is watching for, and why. That standard is set slowly, through candor that most boards find uncomfortable and the best boards make routine.",
+        text: "The organizations that struggle in a crisis are often the ones that were most confident before it. Success had quietly persuaded them that the conditions which produced it were permanent. When those conditions changed, they had no practice at changing with them.",
       },
       {
         type: "heading",
-        text: "The value of an outside read",
+        text: "Steadiness is the first job",
       },
       {
         type: "paragraph",
-        text: "There is a particular usefulness in counsel that owes nothing to the organization's internal politics. An outside adviser can say the plain thing that everyone in the room already knows and no one has been positioned to say. Often that is the whole of the contribution — and it is worth a great deal.",
+        text: "In the moment, a leader's most important contribution is not a plan. It is composure. People take their cue from the person in charge, and an organization that senses alarm at the top will manufacture its own. The leader who stays steady names the situation plainly, decides at the pace the moment demands, and keeps the enterprise fixed on what still matters. That composure buys back the one thing a crisis destroys fastest: the time to think.",
       },
       {
         type: "paragraph",
-        text: "Good governance is unglamorous by design. It is the discipline of attending to the important before it becomes the urgent. Boards that master it are rarely celebrated for it, which is exactly as it should be.",
+        text: "Steadiness is not the same as certainty. A leader will rarely have enough information, and waiting for more is often its own decision. The work is to act on the best available read, say honestly what is known and what is not, and adjust as the picture clears.",
+      },
+      {
+        type: "heading",
+        text: "What the aftermath is for",
+      },
+      {
+        type: "paragraph",
+        text: "A crisis is a poor time to learn what an organization is made of, but an honest one. It shows which relationships were real, which processes were theater, and which leaders can be relied upon when the script runs out. The institutions that recover best treat the aftermath as instruction. They study what held, what broke, and what they will build differently before the next test arrives. Because it will.",
       },
     ],
   },

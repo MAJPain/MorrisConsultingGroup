@@ -14,13 +14,13 @@ export function PracticeAreas() {
               ADVISORY
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">
-              Four practices, <span className="italic text-warm-brown">one discipline.</span>
+              Five practices, <span className="italic text-warm-brown">one discipline.</span>
             </h2>
           </div>
           <div className="md:col-span-4 md:col-start-9">
             <p className="max-w-sm font-body leading-relaxed text-ink/70">
-              We work across four related practices — each in service of the same
-              conviction that governance and performance are inseparable.
+              We work across five related practices, each in service of the same
+              conviction that performance and leadership are inseparable.
             </p>
           </div>
         </div>
