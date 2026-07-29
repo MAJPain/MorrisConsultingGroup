@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowLink } from "@/components/ArrowLink";
 
 export default function NotFound() {
