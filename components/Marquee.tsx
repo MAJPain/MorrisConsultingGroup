@@ -1,0 +1,88 @@
+import { cn } from "@/lib/utils";
+
+type MarqueeProps = {
+  items: string[];
+  /** Seconds for one full loop. Larger = slower. */
+  durationSeconds?: number;
+  className?: string;
+  /** Tailwind bg + text color classes for the strip. */
+  tone?: "light" | "dark";
+};
+
+/**
+ * Infinite horizontal scrolling text strip, monospace, with monogram-dot
+ * separators. Pauses on hover; frozen under prefers-reduced-motion (CSS).
+ */
+export function Marquee({
+  items,
+  durationSeconds = 40,
+  className,
+  tone = "dark",
+}: MarqueeProps) {
+  // Two identical sequences sit side by side; translating the track -50%
+  // lands the second exactly where the first began — a seamless loop.
+  const sequence = (keyPrefix: string) => (
+    <div className="flex shrink-0 items-center" aria-hidden={keyPrefix === "b"}>
+      {items.map((item, i) => (
+        <span key={`${keyPrefix}-${i}`} className="flex items-center">
+          <span className="whitespace-nowrap px-6 font-mono text-xs uppercase tracking-eyebrow md:px-9">
+            {item}
+          </span>
+          <Separator tone={tone} />
+        </span>
+      ))}
+    </div>
+  );
+
+  return (
+    <div
+      className={cn(
+        "pause-on-hover group relative overflow-hidden border-y py-5",
+        tone === "dark"
+          ? "border-warm-brown/25 bg-deep-blue text-bone-white"
+          : "border-warm-brown/25 bg-bone-white text-ink",
+        className
+      )}
+    >
+      <div
+        className="marquee-track flex w-max animate-marquee"
+        style={{ ["--marquee-duration" as string]: `${durationSeconds}s` }}
+      >
+        {sequence("a")}
+        {sequence("b")}
+      </div>
+
+      {/* Edge fades */}
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-y-0 left-0 w-16 md:w-28",
+          tone === "dark"
+            ? "bg-gradient-to-r from-deep-blue to-transparent"
+            : "bg-gradient-to-r from-bone-white to-transparent"
+        )}
+      />
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-y-0 right-0 w-16 md:w-28",
+          tone === "dark"
+            ? "bg-gradient-to-l from-deep-blue to-transparent"
+            : "bg-gradient-to-l from-bone-white to-transparent"
+        )}
+      />
+    </div>
+  );
+}
+
+function Separator({ tone }: { tone: "light" | "dark" }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={cn(
+        "font-display text-lg leading-none",
+        tone === "dark" ? "text-soft-brown" : "text-warm-brown"
+      )}
+    >
+      ·
+    </span>
+  );
+}

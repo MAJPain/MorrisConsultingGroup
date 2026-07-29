@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --marquee-duration: 40s;
+  }
+
+  * {
+    @apply border-warm-brown/15;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: auto; /* Lenis handles smooth scrolling */
+  }
+
+  body {
+    @apply bg-bone-white font-body text-ink antialiased;
+    font-feature-settings: "kern", "liga", "calt";
+  }
+
+  /* Editorial headings default to the serif display face. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    @apply bg-warm-brown/25 text-ink;
+  }
+
+  /* Warm-brown focus ring for keyboard users. */
+  :focus-visible {
+    outline: 2px solid theme("colors.warm-brown");
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* Lenis smooth scroll wiring. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  /* --- Eyebrow / section label --- */
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-eyebrow text-warm-brown;
+  }
+
+  /* --- Editorial link with a brown underline that draws from the left --- */
+  .link-underline {
+    @apply relative inline-block text-ink transition-colors duration-300;
+  }
+  .link-underline::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-warm-brown transition-transform duration-500 ease-editorial;
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    @apply scale-x-100;
+  }
+
+  /* A link that shows its brown underline persistently, thickening on hover. */
+  .link-drawn {
+    @apply relative inline-block text-ink;
+    box-shadow: inset 0 -1px 0 0 theme("colors.warm-brown / 60%");
+    transition: box-shadow 0.4s theme("transitionTimingFunction.editorial");
+  }
+  .link-drawn:hover,
+  .link-drawn:focus-visible {
+    box-shadow: inset 0 -2px 0 0 theme("colors.warm-brown");
+  }
+
+  /* Duotone / warm treatment for portrait imagery. */
+  .duotone-warm {
+    filter: grayscale(0.35) sepia(0.22) contrast(1.02) brightness(1.01);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide the native cursor when the custom cursor is active (pointer devices). */
+  @media (pointer: fine) {
+    html.custom-cursor,
+    html.custom-cursor * {
+      cursor: none !important;
+    }
+  }
+
+  .pause-on-hover:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+/* --- Respect reduced motion everywhere --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
