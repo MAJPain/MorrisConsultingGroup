@@ -48,7 +48,7 @@ export function TeamMemberSection({ member, index }: TeamMemberSectionProps) {
     <article className="py-16 md:py-24">
       <SplitSection image={portrait} imageSide={imageSide} align="start">
         <div className="flex flex-col">
-          <SectionLabel number={member.slot} as="p" className="mb-6">
+          <SectionLabel as="p" className="mb-6">
             {member.eyebrow}
           </SectionLabel>
 

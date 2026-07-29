@@ -9,7 +9,7 @@ export function Intro() {
     <section className="container py-24 md:py-36">
       <div className="grid grid-cols-1 gap-y-10 md:grid-cols-12 md:gap-x-8">
         <div className="md:col-span-3">
-          <SectionLabel number={intro.number} as="p">
+          <SectionLabel as="p">
             {intro.label}
           </SectionLabel>
         </div>

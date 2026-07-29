@@ -33,10 +33,7 @@ export default function AdvisoryPage() {
             className="grid grid-cols-1 gap-x-8 gap-y-8 border-b border-warm-brown/25 py-16 md:grid-cols-12 md:py-24"
           >
             <div className="md:col-span-4">
-              <span className="font-mono text-sm text-warm-brown">
-                — {practice.number}
-              </span>
-              <h2 className="mt-6 font-display text-3xl font-medium leading-tight text-deep-blue md:text-4xl">
+              <h2 className="font-display text-3xl font-medium leading-tight text-deep-blue md:text-4xl">
                 {practice.title}
               </h2>
               <p className="mt-4 max-w-xs font-display text-xl font-light italic text-warm-brown">
@@ -80,7 +77,7 @@ export default function AdvisoryPage() {
       <section className="bg-bone-white py-24 md:py-36">
         <div className="container">
           <div className="mb-16 md:mb-24">
-            <SectionLabel number={approach.number} as="p" className="mb-6">
+            <SectionLabel as="p" className="mb-6">
               {approach.label}
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">
@@ -92,9 +89,6 @@ export default function AdvisoryPage() {
             {approach.steps.map((step) => (
               <ScrollReveal key={step.number}>
                 <div className="flex h-full flex-col gap-4 border-t border-warm-brown/25 pt-6">
-                  <span className="font-mono text-sm text-warm-brown">
-                    {step.number}
-                  </span>
                   <h3 className="font-display text-2xl font-medium text-deep-blue">
                     {step.title}
                   </h3>

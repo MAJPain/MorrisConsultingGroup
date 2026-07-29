@@ -135,7 +135,6 @@ export const contactCta = {
 /** Footer */
 export const footer = {
   tagline: "Counsel for leaders navigating what comes next.",
-  colophon:
-    "Set in Cormorant Garamond, Inter Tight, and JetBrains Mono.",
+  colophon: "Set in Newsreader and Inter Tight.",
   sitemap: [...nav, contactNav],
 } as const;

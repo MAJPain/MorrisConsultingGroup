@@ -20,7 +20,7 @@ npm run dev
 Then open [http://localhost:3000](http://localhost:3000).
 
 > Fonts are loaded via `next/font/google`, so the first `dev` or `build` needs
-> network access to fetch Cormorant Garamond, Inter Tight, and JetBrains Mono.
+> network access to fetch Newsreader and Inter Tight.
 
 ### Scripts
 
@@ -107,12 +107,15 @@ accent — never a background.
 
 Loaded with `next/font/google`, exposed as CSS variables:
 
-- **Cormorant Garamond** (`--font-display`) — display & all headings.
-- **Inter Tight** (`--font-body`) — body copy, navigation, UI.
-- **JetBrains Mono** (`--font-mono`) — section numbers, metadata, eyebrows.
+- **Newsreader** (`--font-display`) — display & all headings. An editorial
+  serif with moderate contrast, chosen for institutional authority over the
+  delicate/luxury register of a display Garamond.
+- **Inter Tight** (`--font-body`) — body copy, navigation, UI, and the label
+  voice. The `font-mono` utility is aliased to this sans (monospace was
+  retired), so eyebrows render as letterspaced caps.
 
 Oversized headings use the fluid `text-editorial` clamp
-(`clamp(2.5rem, 8vw, 9rem)`). Eyebrows are the `.eyebrow` utility — mono,
+(`clamp(2.5rem, 8vw, 9rem)`). Eyebrows are the `.eyebrow` utility — letterspaced,
 uppercase, `tracking-eyebrow` (0.2em), warm brown.
 
 ### Motion

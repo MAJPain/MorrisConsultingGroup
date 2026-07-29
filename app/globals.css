@@ -67,9 +67,9 @@
 }
 
 @layer components {
-  /* --- Eyebrow / section label --- */
+  /* --- Eyebrow / section label — letterspaced sans caps --- */
   .eyebrow {
-    @apply font-mono text-xs uppercase tracking-eyebrow text-warm-brown;
+    @apply font-mono text-xs font-medium uppercase tracking-eyebrow text-warm-brown;
   }
 
   /* --- Editorial link with a brown underline that draws from the left --- */

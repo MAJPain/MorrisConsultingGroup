@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 
 type PageHeaderProps = {
   eyebrow: string;
-  number?: string;
   title: string;
   /** Italic serif subtitle line. */
   subtitle?: string;
@@ -16,11 +15,10 @@ type PageHeaderProps = {
 
 /**
  * Interior page masthead. Clears the fixed navbar and sets the large serif
- * title with a numbered eyebrow.
+ * title with an eyebrow label.
  */
 export function PageHeader({
   eyebrow,
-  number,
   title,
   subtitle,
   lede,
@@ -28,7 +26,7 @@ export function PageHeader({
 }: PageHeaderProps) {
   return (
     <header className={cn("container pb-16 pt-36 md:pb-24 md:pt-48", className)}>
-      <SectionLabel number={number} as="p" className="mb-8">
+      <SectionLabel as="p" className="mb-8">
         {eyebrow}
       </SectionLabel>
 

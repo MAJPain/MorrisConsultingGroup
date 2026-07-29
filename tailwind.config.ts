@@ -35,7 +35,10 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)", "Georgia", "serif"],
         body: ["var(--font-body)", "system-ui", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+        // Label / eyebrow voice. Monospace was retired in favor of
+        // letterspaced sans caps, so `font-mono` now resolves to the body
+        // sans. Kept as a named utility so label call sites need no changes.
+        mono: ["var(--font-body)", "system-ui", "sans-serif"],
       },
       fontSize: {
         // Fluid editorial display sizes

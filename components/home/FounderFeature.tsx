@@ -29,11 +29,7 @@ export function FounderFeature() {
             />
           }
         >
-          <SectionLabel
-            number={founderFeature.number}
-            as="p"
-            className="mb-8 text-soft-brown"
-          >
+          <SectionLabel as="p" className="mb-8 text-soft-brown">
             {founderFeature.label}
           </SectionLabel>
 

@@ -9,7 +9,7 @@ export function Engagements() {
       <div className="container">
         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-12">
           <div className="md:col-span-4">
-            <SectionLabel number="04" as="p" className="mb-6">
+            <SectionLabel as="p" className="mb-6">
               SELECTED ENGAGEMENTS
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">

@@ -13,7 +13,7 @@ export function InsightsPreview() {
       <div className="container">
         <div className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <SectionLabel number="05" as="p" className="mb-6">
+            <SectionLabel as="p" className="mb-6">
               INSIGHTS
             </SectionLabel>
             <h2 className="max-w-xl text-editorial-sm font-medium tracking-tight text-deep-blue">

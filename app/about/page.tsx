@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="container py-20 md:py-32">
         <div className="grid grid-cols-1 gap-y-10 md:grid-cols-12 md:gap-x-8">
           <div className="md:col-span-4">
-            <SectionLabel number={story.number} as="p" className="mb-6">
+            <SectionLabel as="p" className="mb-6">
               {story.label}
             </SectionLabel>
             <h2 className="text-editorial-xs font-medium leading-tight tracking-tight text-deep-blue">
@@ -46,7 +46,7 @@ export default function AboutPage() {
       {/* Philosophy — anchor color */}
       <section className="bg-midnight-blue py-24 text-bone-white md:py-36">
         <div className="container">
-          <SectionLabel number={philosophy.number} as="p" className="mb-10 text-soft-brown">
+          <SectionLabel as="p" className="mb-10 text-soft-brown">
             {philosophy.label}
           </SectionLabel>
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-12 md:gap-x-8">
@@ -73,7 +73,7 @@ export default function AboutPage() {
       <section className="bg-bone-white py-24 md:py-36">
         <div className="container">
           <div className="mb-14 md:mb-20">
-            <SectionLabel number={valuesSection.number} as="p" className="mb-6">
+            <SectionLabel as="p" className="mb-6">
               {valuesSection.label}
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">
@@ -85,9 +85,6 @@ export default function AboutPage() {
             {values.map((value) => (
               <ScrollReveal key={value.number}>
                 <article className="flex h-full flex-col gap-4 border-t border-warm-brown/25 py-10">
-                  <span className="font-mono text-sm text-warm-brown">
-                    — {value.number}
-                  </span>
                   <h3 className="font-display text-3xl font-medium text-deep-blue">
                     {value.title}
                   </h3>

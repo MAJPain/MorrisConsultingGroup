@@ -1,22 +1,20 @@
-import {
-  Cormorant_Garamond,
-  Inter_Tight,
-  JetBrains_Mono,
-} from "next/font/google";
+import { Newsreader, Inter_Tight } from "next/font/google";
 
 /**
- * Cormorant Garamond — display & headings. --font-display
+ * Newsreader — display & headings. A Google serif built for on-screen
+ * editorial reading: moderate contrast, quarterly-review gravity (not the
+ * delicate, high-contrast register of a display Garamond). --font-display
  */
-export const fontDisplay = Cormorant_Garamond({
+export const fontDisplay = Newsreader({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-display",
   display: "swap",
 });
 
 /**
- * Inter Tight — body copy, navigation, UI. --font-body
+ * Inter Tight — body copy, navigation, UI, and the label/eyebrow voice
+ * (set as letterspaced caps). --font-body
  */
 export const fontBody = Inter_Tight({
   subsets: ["latin"],
@@ -25,14 +23,4 @@ export const fontBody = Inter_Tight({
   display: "swap",
 });
 
-/**
- * JetBrains Mono — section numbers, metadata, eyebrows. --font-mono
- */
-export const fontMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-mono",
-  display: "swap",
-});
-
-export const fontVariables = `${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable}`;
+export const fontVariables = `${fontDisplay.variable} ${fontBody.variable}`;

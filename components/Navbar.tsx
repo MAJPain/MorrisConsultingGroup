@@ -136,9 +136,6 @@ function MobileMenu({ open }: { open: boolean }) {
                       active && "text-warm-brown"
                     )}
                   >
-                    <span className="font-mono text-xs text-warm-brown">
-                      {String(items.indexOf(item) + 1).padStart(2, "0")}
-                    </span>
                     {item.label}
                   </Link>
                 </li>
