@@ -39,6 +39,7 @@ export const contactNav: NavItem = { label: "Contact", href: "/contact" };
 /** Home hero */
 export const hero = {
   statement: "Lead the present. Shape the future.",
+  lines: ["Lead the present.", "Shape the future."],
   scrollCue: "Scroll",
 } as const;
 

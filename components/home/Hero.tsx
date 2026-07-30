@@ -25,12 +25,18 @@ export function Hero() {
 
       <div className="container relative flex flex-1 flex-col justify-center pb-24 pt-32 md:pb-32">
         <h1 className="max-w-[16ch]">
-          <RevealText
-            as="span"
-            text={hero.statement}
-            className="block text-editorial font-medium tracking-[-0.02em] text-bone-white"
-            stagger={0.07}
-          />
+          {hero.lines.map((line, i) => (
+            <RevealText
+              key={line}
+              as="span"
+              text={line}
+              className={`block text-editorial font-medium tracking-[-0.02em] text-bone-white${
+                i > 0 ? " mt-8 md:mt-12" : ""
+              }`}
+              stagger={0.07}
+              delay={i * 0.4}
+            />
+          ))}
         </h1>
       </div>
 

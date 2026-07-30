@@ -72,15 +72,7 @@ export const team: TeamMember[] = [
   },
   {
     slot: "03",
-    eyebrow: "TEAM MEMBER",
-    name: null,
-    role: "To be announced",
-    bio: ["The firm is growing deliberately. This chair is reserved."],
-    variant: "placeholder",
-  },
-  {
-    slot: "04",
-    eyebrow: "TEAM MEMBER",
+    eyebrow: "PARTNER",
     name: null,
     role: "To be announced",
     bio: ["The firm is growing deliberately. This chair is reserved."],

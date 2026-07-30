@@ -67,6 +67,86 @@ export const essays: Essay[] = [
     ],
   },
   {
+    slug: "transparency-is-a-discipline",
+    title: "Transparency is a discipline",
+    dek: "More than feels comfortable, less than everything.",
+    topic: "TRANSPARENCY",
+    date: "April 2026",
+    datetime: "2026-04-14",
+    readingTime: "4 min read",
+    author: "Sheldon Morris",
+    body: [
+      {
+        type: "paragraph",
+        text: "Most leaders share less than they should. The reasons feel responsible at the time: the information is not final, the news is bad, the team already has enough to carry. But an organization abhors a vacuum, and when leaders go quiet, people do not stop looking for answers. They just find worse ones. Rumor fills the space that candor left empty.",
+      },
+      {
+        type: "heading",
+        text: "More than feels comfortable, less than everything",
+      },
+      {
+        type: "paragraph",
+        text: "Transparency is not telling everyone everything. Some things are genuinely confidential, and a leader who overshares is not brave, only undisciplined. The skill is knowing the difference: being open about the reasoning behind a decision, the trade-offs it required, and what you do not yet know, while protecting what truly must be held close. Most leaders draw that line far too conservatively.",
+      },
+      {
+        type: "pullquote",
+        text: "When leaders go quiet, people do not stop looking for answers. They find worse ones.",
+      },
+      {
+        type: "paragraph",
+        text: "What transparency buys is speed and trust. When people understand why a decision was made, they can act on it without waiting to be convinced, and they extend you the benefit of the doubt the next time the reasoning cannot be shared. Withholding does the opposite. It buys a little comfort now and charges a tax on every message that follows.",
+      },
+      {
+        type: "heading",
+        text: "Say the hard thing early",
+      },
+      {
+        type: "paragraph",
+        text: "The test of transparency is not the easy news, which shares itself. It is whether a leader will name a problem while it is still small and awkward, before it becomes large and undeniable. That takes more nerve than any polished statement, and it is worth more than all of them. People forgive a leader who told them the truth early. They rarely forgive one who managed the message while the ground gave way.",
+      },
+    ],
+  },
+  {
+    slug: "trust-is-built-in-ordinary-moments",
+    title: "Trust is built in ordinary moments",
+    dek: "It takes years to earn and minutes to spend.",
+    topic: "TRUST",
+    date: "February 2026",
+    datetime: "2026-02-17",
+    readingTime: "4 min read",
+    author: "Sheldon Morris",
+    body: [
+      {
+        type: "paragraph",
+        text: "People decide whether to trust a leader long before any crisis puts it to the test. They decide it in the small moments: whether you did what you said you would, whether you told the hard truth when staying quiet would have been easier, whether you gave credit that was not yours to keep. Trust is the sum of those moments, and it is quieter than most leaders expect.",
+      },
+      {
+        type: "heading",
+        text: "It is earned, not announced",
+      },
+      {
+        type: "paragraph",
+        text: "You cannot declare yourself trustworthy. The leaders who talk the most about trust often have the least of it, because trust is a conclusion other people reach about you, not a claim you make about yourself. It shows up in whether your team brings you bad news early or waits until it can no longer be hidden. That one behavior tells you most of what you need to know about how much trust you actually have.",
+      },
+      {
+        type: "pullquote",
+        text: "Trust is a conclusion others reach about you, not a claim you make about yourself.",
+      },
+      {
+        type: "paragraph",
+        text: "It also compounds. A leader who is trusted gets the benefit of the doubt in the moments that matter, when there is no time to explain and people have to act on your word alone. That reserve is built slowly, in calm periods, through hundreds of small kept promises. You spend years filling it so you can draw on it in a single afternoon.",
+      },
+      {
+        type: "heading",
+        text: "The fastest way to lose it",
+      },
+      {
+        type: "paragraph",
+        text: "Trust rarely collapses from one large betrayal. More often it erodes through small ones: the commitment quietly dropped, the credit taken, the account that was technically true and deeply misleading. People notice, they say nothing, and they adjust. By the time a leader feels the loss, it is usually well underway. The remedy is unglamorous. Do what you said. Say the hard thing. Own the miss. Do that for long enough and trust takes care of itself.",
+      },
+    ],
+  },
+  {
     slug: "leading-when-the-ground-shifts",
     title: "Leading when the ground shifts",
     dek: "Resilience is built before the crisis, not during it.",
