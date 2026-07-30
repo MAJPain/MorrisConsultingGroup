@@ -29,6 +29,93 @@ export const essayCta = {
 
 export const essays: Essay[] = [
   {
+    slug: "what-right-looks-like",
+    title: "Can you describe what right looks like when you're done?",
+    dek: "Most leaders inherit a strategy as activities, not as a picture of what right looks like.",
+    topic: "ALIGNMENT",
+    datetime: "2026-07-28",
+    readingTime: "4 min read",
+    author: "Sheldon Morris",
+    body: [
+      {
+        type: "paragraph",
+        text: "Can you describe what right looks like when you're done?",
+      },
+      {
+        type: "paragraph",
+        text: "I ask leaders this question when I coach them, and the pause I get back is usually the answer. Not because they are bad leaders, and not because they do not care about strategy, but because most people who inherit a strategy have inherited it as a set of activities, targets, or slide-deck bullets rather than as a picture of what the organization looks like when the strategy is achieved.",
+      },
+      {
+        type: "paragraph",
+        text: "That is a different kind of understanding, and it is the one that keeps a leader oriented when the ground shifts under them.",
+      },
+      {
+        type: "paragraph",
+        text: "I use the line deliberately. It is plainer than “vision” or “goals” or “outcomes” or “north star,” and it does not carry the baggage that comes with those words. It asks the leader to close their eyes for a moment and describe the condition, not the number.",
+      },
+      {
+        type: "paragraph",
+        text: "What does the organization look like the day the strategy is done? Who does it serve? How does it feel to work in? What does it deliver, and to whom? What is different from where it stands today? These are answerable questions, and when a leader can answer them clearly, they are aligned with the strategy in the way strategy actually requires. When they cannot, they may be executing tactics with commitment while pointing themselves at a picture that does not match the one the executive team is holding.",
+      },
+      {
+        type: "paragraph",
+        text: "The literature on strategy failure has said for years that people do not understand the strategy. That framing is not wrong, but it is loose. What most leaders actually cannot describe is a specific two-part picture: what right looks like when the organization gets there, and what their own part in getting the organization there was. Miss either half, and a leader is disconnected. Get one but not the other, and they are still disconnected, just in a different direction.",
+      },
+      {
+        type: "paragraph",
+        text: "The first half, the endstate picture, is where most strategic conversations invest their energy. Executives write vision statements. Boards ratify strategic plans. Consultants build strategy maps. All of that work has a purpose, and none of it is a substitute for the leader in the middle being able to describe, in their own words, what the finished condition looks like.",
+      },
+      {
+        type: "paragraph",
+        text: "Communication is not the same thing as alignment. Almost every organization believes it communicates its strategy well. Fewer can demonstrate that the strategy is actually held, in the same shape, by the leaders it needs to reach. The distance between the two is where most strategy failure lives, and it is not closed by better slides.",
+      },
+      {
+        type: "pullquote",
+        text: "Communication is not the same thing as alignment.",
+      },
+      {
+        type: "paragraph",
+        text: "The second half is where the disconnect gets quieter and more dangerous. A leader can know what right looks like when the organization is done and still not know what part of getting there is theirs. That gap does not usually announce itself. Instead, it produces a leader who executes competently against activities they inferred were theirs, or who waits for direction that was assumed to have been given, or who works hard on the wrong problem because nobody clearly named which problem belonged to them.",
+      },
+      {
+        type: "paragraph",
+        text: "That is not a performance issue. It is a role clarity issue, and it lives on the same continuum as the endstate question.",
+      },
+      {
+        type: "paragraph",
+        text: "I have been on the receiving end of both disconnects, and so has almost every leader who has been in the profession long enough to be reading this. I have executed strategy without a picture of where we were headed and figured it out from context. I have been given the picture and left to figure out my part on the fly.",
+      },
+      {
+        type: "paragraph",
+        text: "Neither is a failure of character. Both are failures of translation, and the failure is upstream of the leader they land on. That is worth naming, because the reflex when strategy stalls is to blame execution, which is another way of blaming the leader closest to the work. Sometimes execution is the problem. More often, translation was.",
+      },
+      {
+        type: "pullquote",
+        text: "Sometimes execution is the problem. More often, translation was.",
+      },
+      {
+        type: "paragraph",
+        text: "Here is the reflection I want to invite. Think about the strategy your organization is currently running on. Not the words on the slide. The picture behind them. Most leaders, tested honestly on whether they can describe the finished condition and their own specific role in producing it, discover a gap they had not named. That gap is not usually the strategy. It is the alignment underneath the strategy, and the alignment underneath is what determines whether the strategy will do what it was written to do.",
+      },
+      {
+        type: "paragraph",
+        text: "The purpose of this note is not to solve the disconnect. It is to reduce the blind spot around it. Leaders at every level from the boardroom to the frontline manager sit inside this problem, and most sit inside it without noticing. The organizations that will move well through the next decade of change are the ones where a leader at any level can finish two sentences without hesitation. What right looks like when we are done. What my part in getting us there is.",
+      },
+      {
+        type: "paragraph",
+        text: "Which brings me back to where I started.",
+      },
+      {
+        type: "paragraph",
+        text: "Can you describe what right looks like when you're done?",
+      },
+      {
+        type: "paragraph",
+        text: "If not you, then someone in the room with you. And if not them, then the disconnect is closer to the top than most executive teams want to believe. Closing that distance is a specific kind of work, and it is not the same work as writing the strategy.",
+      },
+    ],
+  },
+  {
     slug: "who-did-you-send-forward",
     title: "Who did you send forward?",
     dek: "Data tells you what happened. A person tells you what is happening now.",
@@ -37,6 +124,10 @@ export const essays: Essay[] = [
     readingTime: "4 min read",
     author: "Sheldon Morris",
     body: [
+      {
+        type: "paragraph",
+        text: "Who did you send forward?",
+      },
       {
         type: "paragraph",
         text: "I ask because every organization runs on a picture of the ground it cannot personally stand on. The picture is only as good as the person the organization sent to see it. That is a fact that has been true for centuries, and it is still not, in most organizations I sit with, treated as a decision worth deliberate investment.",
@@ -63,7 +154,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "I led a scout platoon before I commanded a company, and much of what I know about ground truth I learned there. Scouts moved ahead of the main body. They were the eyes and ears of the battalion — the commander's picture of the ground before he committed six or eight hundred people to it.",
+        text: "I led a scout platoon before I commanded a company, and much of what I know about ground truth I learned there. Scouts moved ahead of the main body. They were the eyes and ears of the battalion, the commander's picture of the ground before he committed six or eight hundred people to it.",
       },
       {
         type: "paragraph",
@@ -71,11 +162,15 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "There was also a discipline in what they were asked. Scouts did not wander looking at whatever caught their attention. Every operation began with a set of specific information requirements — in Army doctrine, Priority Intelligence Requirements — that the commander had designated as critical to specific pending decisions. Each was a single question, ranked in priority, tied to a decision on the commander's decision support matrix. If answering it would not change a course of action he was about to take, it was not a requirement. It was noise.",
+        text: "There was also a discipline in what they were asked. Scouts did not wander looking at whatever caught their attention. Every operation began with a small set of specific questions the commander had designated as decision-critical, prioritized ruthlessly, tied to actions the commander was about to take. If a question would not change what the commander did next, it did not belong on the list.",
       },
       {
         type: "paragraph",
-        text: "When I moved from that platoon to company command, the geometry changed. I had three platoons and one body. I could only be in one place at a time. In the other two locations, I had to rely on leaders I had trained and trusted. I remained the decision-maker. What extended was not my authority but my reach — and that reach was only as good as the leaders I had invested in before I needed them.",
+        text: "Scouts were tasked against those questions, evaluated against how well they answered them, and advanced on the strength of the answers they brought back. The discipline turned a vague need to “know what is happening” into a set of decisions the reporting was actually built to inform.",
+      },
+      {
+        type: "paragraph",
+        text: "When I moved from that platoon to company command, the geometry changed. I had three platoons and one body. I could only be in one place at a time. In the other two locations, I had to rely on leaders I had trained and trusted. I remained the decision-maker. What extended was not my authority but my reach, and that reach was only as good as the leaders I had invested in before I needed them.",
       },
       {
         type: "paragraph",
@@ -83,7 +178,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "These are the scouts of the sector — the enablers of the mission at its point of contact. Most sectors do not treat them as such. They are the lowest-paid, least developed, most quickly replaced positions in the organizational chart, and their reporting is rarely routed to any table where a decision that matters is being made.",
+        text: "These are the scouts of the sector, the enablers of the mission at its point of contact. Most sectors do not treat them as such. They are the lowest-paid, least developed, most quickly replaced positions in the organizational chart, and their reporting is rarely routed to any table where a decision that matters is being made.",
       },
       {
         type: "paragraph",
@@ -91,7 +186,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "When I run, it is for me — to see it, to smell it, to taste it, to interact with the people who live and work in it, and to better understand the environment I am about to operate in. That is how I get grounded. It is not a leadership technique and I am not recommending it as one. It is how I make sure the meeting I walk into on day two is informed by something the meeting itself cannot give me.",
+        text: "When I run, it is for me, to see it, to smell it, to taste it, to interact with the people who live and work in it, and to better understand the environment I am about to operate in. That is how I get grounded. It is not a leadership technique and I am not recommending it as one. It is how I make sure the meeting I walk into on day two is informed by something the meeting itself cannot give me.",
       },
       {
         type: "paragraph",
@@ -130,11 +225,15 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "That is not a hiring problem. It is a receiving-culture problem. Sectors under pressure eventually have to bring in talent formed elsewhere. Most believe they are prepared to do that. Fewer are. The culture question is actually three questions in one: whether the organization is prepared to receive outside talent, whether it is willing to be changed by that talent, and whether integration succeeds or the person either conforms or leaves.",
+        text: "That is not a hiring problem. It is a receiving-culture problem. Sectors under pressure eventually have to bring in talent formed elsewhere. Most believe they are prepared to do that. Fewer are.",
       },
       {
         type: "pullquote",
         text: "That is not a hiring problem. It is a receiving-culture problem.",
+      },
+      {
+        type: "paragraph",
+        text: "And the culture question is more layered than most organizations treat it as. Being prepared is not the same as being willing, and neither is the same as the specific work integration actually requires. Most treatments of the topic collapse these distinctions, and most organizations do too.",
       },
       {
         type: "paragraph",
@@ -150,7 +249,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "So one might expect the sector, having identified a leadership pipeline problem, to have organized itself to absorb this population. It has not. Indeed's 2025 workforce survey found sixty-four percent of veterans with more than eleven years of service report feeling underemployed or underutilized in their civilian roles. For two out of every three of the people I am describing, the organization is not maximizing the experience and skills they bring.",
+        text: "So one might expect the sector, having identified a leadership pipeline problem, to have organized itself to absorb this population. It has not. Indeed's 2025 workforce survey found sixty-four percent of veterans with more than eleven years of service report feeling underemployed or underutilized in their civilian roles. For two out of every three of these leaders, the organization is not drawing on the experience and skills they bring.",
       },
       {
         type: "paragraph",
@@ -166,7 +265,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "The responsibility runs both ways. Preparedness and willingness are what the organization brings to the crossing. Translation is what the outside talent brings. A retired Colonel who runs a nonprofit staff meeting the way they ran a battalion staff, giving direction where consensus was the norm and reading a peer as a subordinate, has failed a discipline the organization could not have taught them. Neither side gets to opt out.",
+        text: "The responsibility runs both ways. What the organization brings to the crossing is preparation and willingness. Translation is what the outside talent brings. A retired Colonel who runs a nonprofit staff meeting the way they ran a battalion staff, giving direction where consensus was the norm and reading a peer as a subordinate, has failed a discipline the organization could not have taught them. Neither side gets to opt out.",
       },
       {
         type: "paragraph",
@@ -174,7 +273,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "The question is not really about veterans. Veterans are the sharpest case because the mismatch is the most visible there. But the military-retiree case is an illustration of the pattern, not the whole of it. Any senior hire whose formation happened outside your industry, whether from banking, from corporate operations, or from another sector of nonprofits, is subject to the same crossing, and the same failure mode when preparedness, willingness, or integration is missing.",
+        text: "The question is not really about veterans. Veterans are the sharpest case because the mismatch is the most visible there. But the military-retiree case is an illustration of the pattern, not the whole of it. Any senior hire whose formation happened outside your industry, whether from banking, from corporate operations, or from another sector of nonprofits, is subject to the same crossing, and the same set of failure modes when the culture on the receiving side is not equipped to hold them.",
       },
       {
         type: "paragraph",
@@ -249,7 +348,7 @@ export const essays: Essay[] = [
       },
       {
         type: "paragraph",
-        text: "The question is not whether your organization values leadership development. Every organization I have advised says it does. The question is whether the value is real. Real means it appears in the performance review. Real means the executive who neglected succession loses standing when that neglect is discovered. Real means the manager who has produced three people ready to run his function is more valuable to the organization than the manager who has made himself the only person who can.",
+        text: "The question is not whether your organization values leadership development. Every organization I have advised says it does. The question is whether the value is real or performative. Real leaves a mark on how leaders are evaluated and rewarded, on who is treated as valuable to the organization and who is not, and on whether developing a successor helps or hurts a leader's standing. Performative leaves a mark on the annual report. The distance between the two is where the incentive structure actually lives.",
       },
       {
         type: "paragraph",
