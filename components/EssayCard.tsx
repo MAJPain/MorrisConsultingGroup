@@ -13,14 +13,8 @@ export function EssayCard({ essay }: { essay: Essay }) {
       className="group block border-b border-warm-brown/25 py-8 transition-colors duration-500 first:border-t md:py-10"
     >
       <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:items-baseline md:gap-8">
-        <div className="flex items-center gap-4 md:col-span-3 md:flex-col md:items-start md:gap-2">
-          <time
-            dateTime={essay.datetime}
-            className="font-mono text-xs uppercase tracking-eyebrow text-warm-brown"
-          >
-            {essay.date}
-          </time>
-          <span className="font-mono text-[0.65rem] uppercase tracking-eyebrow text-fog">
+        <div className="md:col-span-3">
+          <span className="font-mono text-xs uppercase tracking-eyebrow text-warm-brown">
             {essay.topic}
           </span>
         </div>

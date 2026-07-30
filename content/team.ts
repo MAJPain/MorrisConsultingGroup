@@ -17,6 +17,7 @@ export type TeamMember = {
   bioNote?: string; // italic closing note, e.g. "Full biography forthcoming."
   credentials?: string[]; // monospace list
   pullQuote?: string;
+  linkedin?: string; // profile URL
   variant: TeamVariant;
 };
 
@@ -47,6 +48,7 @@ export const team: TeamMember[] = [
     ],
     pullQuote:
       "Enterprise performance is inseparable from the character of leadership.",
+    linkedin: "https://www.linkedin.com/in/sheldon-morris/",
     variant: "full",
   },
   {
@@ -68,6 +70,7 @@ export const team: TeamMember[] = [
       "LECTURER / GEORGE WASHINGTON & CORNELL UNIVERSITIES",
       "KEYNOTE SPEAKER / BOARD MEMBER",
     ],
+    linkedin: "https://www.linkedin.com/in/kenya-dugger/",
     variant: "standard",
   },
   {

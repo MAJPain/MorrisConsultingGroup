@@ -60,12 +60,6 @@ export default async function EssayPage({
           <span className="font-mono text-xs uppercase tracking-eyebrow text-warm-brown">
             — {essay.topic}
           </span>
-          <time
-            dateTime={essay.datetime}
-            className="font-mono text-xs uppercase tracking-eyebrow text-fog"
-          >
-            {essay.date}
-          </time>
           <span className="font-mono text-xs uppercase tracking-eyebrow text-fog">
             {essay.readingTime}
           </span>
@@ -134,7 +128,7 @@ export default async function EssayPage({
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <Link href={`/insights/${next.slug}`} className="group max-w-2xl">
                 <span className="font-mono text-xs uppercase tracking-eyebrow text-bone-white/50">
-                  {next.date} · {next.topic}
+                  {next.topic}
                 </span>
                 <h2 className="mt-3 font-display text-3xl font-medium leading-tight text-bone-white transition-colors duration-500 group-hover:text-soft-brown md:text-4xl">
                   {next.title}

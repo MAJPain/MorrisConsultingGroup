@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { TeamMember } from "@/content/team";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -62,6 +63,18 @@ export function TeamMemberSection({ member, index }: TeamMemberSectionProps) {
             <h2 className="text-editorial-sm font-normal italic tracking-tight text-deep-blue/70">
               To be announced.
             </h2>
+          )}
+
+          {member.linkedin && (
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-eyebrow text-warm-brown transition-colors hover:text-soft-brown focus-visible:text-soft-brown"
+            >
+              <Linkedin size={15} aria-hidden="true" />
+              LinkedIn
+            </a>
           )}
 
           {/* Bio */}

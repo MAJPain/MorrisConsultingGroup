@@ -3,7 +3,7 @@ import { Monogram } from "@/components/Monogram";
 import { firm, footer } from "@/content/site";
 
 export function Footer() {
-  const year = 2025; // Established copy year; updated on each publish.
+  const year = 2026; // Established copy year; updated on each publish.
 
   return (
     <footer className="bg-deep-blue text-bone-white">
@@ -56,9 +56,6 @@ export function Footer() {
         <div className="mt-20 flex flex-col gap-4 border-t border-bone-white/15 pt-8 font-mono text-[0.7rem] uppercase tracking-eyebrow text-bone-white/50 md:flex-row md:items-center md:justify-between">
           <p>
             © {year} {firm.legalName}. All rights reserved.
-          </p>
-          <p className="normal-case tracking-normal text-bone-white/40">
-            {footer.colophon}
           </p>
         </div>
       </div>
