@@ -3,8 +3,8 @@
 export const aboutHeader = {
   eyebrow: "ABOUT",
   title: "A firm built on judgment.",
-  subtitle: "Counsel offered by peers, not vendors.",
-  lede: "Morris Consulting Group was founded on a simple premise — that the most consequential decisions a leader faces are improved by a trusted, disinterested second read.",
+  subtitle: "Advice from peers, not vendors.",
+  lede: "We advise and coach leaders and their teams to reach their goals without losing sight of their values, the clients they serve, or the potential of the people beside them.",
 } as const;
 
 export const story = {
@@ -12,7 +12,7 @@ export const story = {
   label: "THE STORY",
   heading: "We began where the stakes are highest.",
   body: [
-    "Morris Consulting Group was founded by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the counsel of chief executives and boards: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
+    "Morris Consulting Group was founded by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
     "We are deliberately small. We take on a limited number of engagements so that each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
     "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
   ],
@@ -46,7 +46,7 @@ export const values: Value[] = [
     number: "01",
     title: "Discretion",
     description:
-      "The most important counsel is given privately. Confidentiality is not a policy at this firm; it is the foundation of the work.",
+      "The most important advice is given privately. Confidentiality is not a policy at this firm; it is the foundation of the work.",
   },
   {
     number: "02",
@@ -58,7 +58,7 @@ export const values: Value[] = [
     number: "03",
     title: "Restraint",
     description:
-      "We take on few engagements and offer counsel sparingly. Advice given in abundance is advice easily ignored.",
+      "We take on few engagements and advise sparingly. Advice given in abundance is easily ignored.",
   },
   {
     number: "04",

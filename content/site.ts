@@ -20,7 +20,7 @@ export const firm = {
   established: "2017",
   location: "Oxford, Mississippi",
   locationShort: "Oxford, MS",
-  tagline: "Counsel for leaders navigating what comes next.",
+  tagline: "Lead the present. Shape the future.",
   email: "inquiries@morrisconsultinggroup.org",
   phone: "",
 } as const;
@@ -38,7 +38,7 @@ export const contactNav: NavItem = { label: "Contact", href: "/contact" };
 
 /** Home hero */
 export const hero = {
-  statement: "Counsel for leaders navigating what comes next.",
+  statement: "Lead the present. Shape the future.",
   scrollCue: "Scroll",
 } as const;
 
@@ -47,8 +47,8 @@ export const intro = {
   label: "THE FIRM",
   number: "01",
   body: [
-    "Morris Consulting Group is an advisory practice. We work with a small number of chief executives and boards of directors on the questions that decide the direction of an enterprise — performance, resilience, and the succession of leadership.",
-    "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by counsel who has sat where our clients sit.",
+    "Morris Consulting Group is an executive advisory and coaching practice. We work with a small number of chief executives and boards of directors on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
+    "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by advisors who have sat where our clients sit.",
   ],
 } as const;
 
@@ -75,7 +75,7 @@ export const practiceAreas: PracticeArea[] = [
     number: "03",
     title: "Executive Advisory & Succession",
     description:
-      "Leadership transitions are the truest test of an institution. We counsel executives and boards through succession with the care it deserves, well before the need becomes urgent.",
+      "Leadership transitions are the truest test of an institution. We advise executives and boards through succession with the care it deserves, well before the need becomes urgent.",
   },
   {
     number: "04",
@@ -96,7 +96,7 @@ export const founderFeature = {
   label: "THE PRINCIPAL",
   number: "03",
   body: [
-    "Morris Consulting Group was founded by Sheldon Morris, who brings sixteen years in senior executive and critical staff roles to the firm's counsel.",
+    "Morris Consulting Group was founded by Sheldon Morris, who brings sixteen years in senior executive and critical staff roles to the firm's advisory work.",
     "His perspective is shaped by that experience across the nonprofit, for-profit, and banking sectors, and by a conviction that enterprise performance is inseparable from the character of leadership.",
   ],
   cta: { label: "Meet the Team", href: "/team" },
@@ -126,7 +126,7 @@ export const engagements: Engagement[] = [
   {
     label: "SUCCESSION",
     description:
-      "Counsel to a founder-led enterprise preparing the orderly transition of its chief executive.",
+      "Advising a founder-led enterprise preparing the orderly transition of its chief executive.",
   },
   {
     label: "STRATEGIC CLARITY",
@@ -149,7 +149,7 @@ export const contactCta = {
 
 /** Footer */
 export const footer = {
-  tagline: "Counsel for leaders navigating what comes next.",
+  tagline: "Lead the present. Shape the future.",
   colophon: "Set in Newsreader and Inter Tight.",
   sitemap: [...nav, contactNav],
 } as const;

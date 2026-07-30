@@ -36,8 +36,8 @@ export const team: TeamMember[] = [
     imageAlt: "Portrait of Sheldon Morris, Founder & Principal of Morris Consulting Group.",
     initials: "SM",
     bio: [
-      "Sheldon Morris founded Morris Consulting Group and serves as its principal. The firm counsels chief executives, boards of directors, and the senior leaders around them on strategy, operating effectiveness, and executive succession. Its engagements are private and selective, taken on where the direction of an organization is genuinely at stake.",
-      "His sixteen years in senior executive and critical staff roles include chief operating officer, chief of staff, and senior advisor, across the nonprofit, for-profit, and banking sectors, at home and abroad. Those positions gave him a direct view of how large organizations set direction and execute, and that perspective is the source of the counsel he brings to clients.",
+      "Sheldon Morris founded Morris Consulting Group and serves as its principal. The firm advises and coaches chief executives, boards of directors, and the senior leaders around them on strategy, operating effectiveness, and executive succession. Its engagements are private and selective, taken on where the direction of an organization is genuinely at stake.",
+      "His sixteen years in senior executive and critical staff roles include chief operating officer, chief of staff, and senior advisor, across the nonprofit, for-profit, and banking sectors, at home and abroad. Those positions gave him a direct view of how large organizations set direction and execute, and that perspective is the source of the advice he brings to clients.",
       "His counsel is direct and practical. He works with leaders on how decisions get made and how executives are held to account, and he expects leaders at every level to invest in their people's potential early and often. That is how an organization prepares the leadership that follows. He earned a Master of Arts and Science from the U.S. Army Command and General Staff College.",
     ],
     credentials: [

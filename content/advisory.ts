@@ -2,7 +2,7 @@
 
 export const advisoryHeader = {
   eyebrow: "ADVISORY",
-  title: "The counsel we offer.",
+  title: "How we advise and coach.",
   subtitle: "Five practices, held to one standard.",
   lede: "We work across five related practices, each grounded in a proactive stance: the strongest organizations shape what is coming rather than wait for it, and thrive because they do.",
 } as const;
@@ -52,12 +52,12 @@ export const practiceDetails: PracticeDetail[] = [
     summary: "Preparing institutions for their most consequential transitions.",
     body: [
       "Leadership transitions are the truest test of an institution's health — and they are almost always addressed later than they should be. Succession is not a name chosen under pressure; it is a process begun well in advance.",
-      "We counsel chief executives and boards through succession and executive transition with the care it deserves: developing leaders, assessing readiness honestly, and preparing an organization to be led differently.",
+      "We advise chief executives and boards through succession and executive transition with the care it deserves: developing leaders, assessing readiness honestly, and preparing an organization to be led differently.",
     ],
     engagements: [
       "CEO & executive succession",
       "Leadership readiness assessment",
-      "Transition counsel",
+      "Transition advisory",
       "Confidential advisory to the chief executive",
     ],
   },
@@ -73,7 +73,7 @@ export const practiceDetails: PracticeDetail[] = [
       "Organizational culture & alignment",
       "Executive & leadership development",
       "Human capital strategy",
-      "Institution-building counsel",
+      "Institution-building advisory",
     ],
   },
   {
@@ -112,15 +112,15 @@ export const approach = {
     },
     {
       number: "03",
-      title: "Counsel",
+      title: "Advise",
       description:
-        "We offer candid counsel and work alongside you to act on it, with the discipline to hold to the priorities we set together.",
+        "We offer candid advice and coaching, and work alongside you to act on it, with the discipline to hold to the priorities we set together.",
     },
     {
       number: "04",
-      title: "Endure",
+      title: "Strengthen",
       description:
-        "We measure success by what remains: an institution sounder, and better led, than when the work began.",
+        "We measure success by what is stronger: an organization better led, and better positioned for what comes next, than when the work began.",
     },
   ],
 } as const;

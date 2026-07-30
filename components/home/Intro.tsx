@@ -17,7 +17,7 @@ export function Intro() {
         <div className="md:col-span-8 md:col-start-5">
           <RevealText
             as="p"
-            text="We advise a small number of leaders on the questions that decide the direction of an enterprise."
+            text="We advise and coach leaders to lead the present and shape the future: strong today, ready for what's next."
             className="text-editorial-xs font-normal leading-tight tracking-tight text-deep-blue"
             stagger={0.035}
           />

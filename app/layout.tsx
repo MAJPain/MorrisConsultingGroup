@@ -12,11 +12,11 @@ const siteUrl = "https://morrisconsultinggroup.org";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${firm.name} — Advisory to CEOs & Boards`,
+    default: `${firm.name} — Executive Advisory & Coaching`,
     template: `%s — ${firm.name}`,
   },
   description:
-    "Morris Consulting Group is an advisory firm working with chief executives and boards of directors on operating effectiveness, enterprise performance, executive succession, and organizational resilience. Based in Oxford, Mississippi.",
+    "Morris Consulting Group is an executive advisory and coaching firm working with chief executives and boards of directors on operating effectiveness, enterprise performance, executive succession, and organizational resilience. Based in Oxford, Mississippi.",
   keywords: [
     "operating effectiveness",
     "executive advisory",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: `${firm.name} — Advisory to CEOs & Boards`,
+    title: `${firm.name} — Executive Advisory & Coaching`,
     description:
-      "Counsel for leaders navigating what comes next. Operating effectiveness, enterprise performance, and executive succession.",
+      "Lead the present. Shape the future. Operating effectiveness, enterprise performance, and executive succession.",
     siteName: firm.name,
   },
   robots: { index: true, follow: true },
