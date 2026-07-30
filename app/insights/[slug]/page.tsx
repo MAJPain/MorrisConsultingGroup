@@ -6,7 +6,7 @@ import { RevealText } from "@/components/RevealText";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { RuleDivider } from "@/components/RuleDivider";
 import { ArrowLink } from "@/components/ArrowLink";
-import { essays, essaysByDate, getEssay } from "@/content/insights";
+import { essayCta, essays, essaysByDate, getEssay } from "@/content/insights";
 
 type Params = { slug: string };
 
@@ -116,6 +116,26 @@ export default async function EssayPage({
                 </p>
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      {/* Firm CTA — closes every essay */}
+      <div className="container pb-16 md:pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-12">
+          <div className="md:col-span-8 md:col-start-3">
+            <div className="border-t border-warm-brown/25 pt-8">
+              <p className="max-w-prose font-body italic leading-relaxed text-ink/60">
+                {essayCta.body}{" "}
+                <a
+                  href={`mailto:${essayCta.email}`}
+                  className="text-warm-brown underline-offset-4 transition-colors hover:text-soft-brown hover:underline"
+                >
+                  {essayCta.email}
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </div>
