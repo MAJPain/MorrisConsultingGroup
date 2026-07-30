@@ -18,7 +18,7 @@ export default function InsightsPage() {
         eyebrow="INSIGHTS"
         title="Notes on the practice of leadership."
         subtitle="Written plainly, for those who lead."
-        lede="Occasional essays on resilience, succession, and the discipline of building institutions that endure."
+        lede="Essays on resilience, succession, and the discipline of building organizations that thrive."
       />
 
       <section className="container pb-24 md:pb-36">

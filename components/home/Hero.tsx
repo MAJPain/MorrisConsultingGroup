@@ -24,8 +24,6 @@ export function Hero() {
       />
 
       <div className="container relative flex flex-1 flex-col justify-center pb-24 pt-32 md:pb-32">
-        <p className="eyebrow mb-8 text-soft-brown md:mb-10">{hero.eyebrow}</p>
-
         <h1 className="max-w-[16ch]">
           <RevealText
             as="span"
@@ -36,11 +34,7 @@ export function Hero() {
         </h1>
       </div>
 
-      <div className="container relative flex items-end justify-between pb-10">
-        <div className="hidden max-w-xs font-body text-sm leading-relaxed text-bone-white/60 md:block">
-          A boutique advisory practice serving chief executives and boards of
-          directors.
-        </div>
+      <div className="container relative flex items-end justify-end pb-10">
         <ScrollCue label={hero.scrollCue} />
       </div>
     </section>

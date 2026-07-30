@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s — ${firm.name}`,
   },
   description:
-    "Morris Consulting Group is a boutique advisory firm counseling chief executives and boards of directors on operating effectiveness, enterprise performance, executive succession, and organizational resilience. Founded 2017 in Oxford, Mississippi.",
+    "Morris Consulting Group is an advisory firm working with chief executives and boards of directors on operating effectiveness, enterprise performance, executive succession, and organizational resilience. Based in Oxford, Mississippi.",
   keywords: [
     "operating effectiveness",
     "executive advisory",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "succession planning",
     "organizational resilience",
     "crisis leadership",
-    "boutique advisory firm",
+    "advisory firm",
     "Oxford Mississippi",
   ],
   authors: [{ name: firm.name }],

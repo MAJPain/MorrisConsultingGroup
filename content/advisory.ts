@@ -4,7 +4,7 @@ export const advisoryHeader = {
   eyebrow: "ADVISORY",
   title: "The counsel we offer.",
   subtitle: "Five practices, held to one standard.",
-  lede: "We work across five related practices. Each begins with the same question: what does this enterprise need in order to endure — and who will decide it?",
+  lede: "We work across five related practices, each grounded in a proactive stance: the strongest organizations shape what is coming rather than wait for it, and thrive because they do.",
 } as const;
 
 export type PracticeDetail = {
@@ -28,7 +28,7 @@ export const practiceDetails: PracticeDetail[] = [
       "Executive team effectiveness",
       "Decision rights & authority",
       "Operating cadence & business rhythm",
-      "The executive office & chief of staff function",
+      "Executive onboarding & integration",
     ],
   },
   {
@@ -67,7 +67,7 @@ export const practiceDetails: PracticeDetail[] = [
     summary: "Building the culture and judgment that performance depends on.",
     body: [
       "Performance follows character. The culture of an organization — its cadence, its candor, the quality of judgment it rewards — determines whether sound strategy is actually carried out.",
-      "We advise leaders on the human dimensions of enterprise: the development of people, the shaping of culture, and the quiet work of building an institution that endures beyond any one tenure.",
+      "We advise leaders on the human dimensions of enterprise: the development of people, the shaping of culture, and the work of building an institution that grows stronger beyond any one tenure.",
     ],
     engagements: [
       "Organizational culture & alignment",

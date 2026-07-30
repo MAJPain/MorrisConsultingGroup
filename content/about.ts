@@ -12,8 +12,8 @@ export const story = {
   label: "THE STORY",
   heading: "We began where the stakes are highest.",
   body: [
-    "Morris Consulting Group was established in 2017 by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the counsel of chief executives and boards: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
-    "We are, by design, a boutique. We take on a small number of engagements so that each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
+    "Morris Consulting Group was founded by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the counsel of chief executives and boards: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
+    "We are deliberately small. We take on a limited number of engagements so that each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
     "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
   ],
 } as const;
@@ -62,8 +62,8 @@ export const values: Value[] = [
   },
   {
     number: "04",
-    title: "Endurance",
+    title: "Impact",
     description:
-      "We measure our work by the institutions it helps build — organizations sound enough to outlast the leaders who shaped them.",
+      "We measure our work by the organizations we help build: stronger, better led, and ready for what comes next.",
   },
 ];

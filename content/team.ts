@@ -36,9 +36,9 @@ export const team: TeamMember[] = [
     imageAlt: "Portrait of Sheldon Morris, Founder & Principal of Morris Consulting Group.",
     initials: "SM",
     bio: [
-      "Sheldon Morris founded Morris Consulting Group in 2017 and serves as its principal. The firm counsels chief executives, boards of directors, and the senior leaders around them on strategy, operating effectiveness, and executive succession. Its engagements are private and selective, taken on where the direction of an organization is genuinely at stake.",
+      "Sheldon Morris founded Morris Consulting Group and serves as its principal. The firm counsels chief executives, boards of directors, and the senior leaders around them on strategy, operating effectiveness, and executive succession. Its engagements are private and selective, taken on where the direction of an organization is genuinely at stake.",
       "His sixteen years in senior executive and critical staff roles include chief operating officer, chief of staff, and senior advisor, across the nonprofit, for-profit, and banking sectors, at home and abroad. Those positions gave him a direct view of how large organizations set direction and execute, and that perspective is the source of the counsel he brings to clients.",
-      "His counsel is direct and practical. He works with leaders on how decisions get made and how executives are held to account, and he expects leaders at every level to invest in their people's potential early and often. That is how an organization prepares the leadership that follows.",
+      "His counsel is direct and practical. He works with leaders on how decisions get made and how executives are held to account, and he expects leaders at every level to invest in their people's potential early and often. That is how an organization prepares the leadership that follows. He earned a Master of Arts and Science from the U.S. Army Command and General Staff College.",
     ],
     credentials: [
       "U.S. ARMY / COLONEL (RET.) / 22 YEARS",
@@ -59,14 +59,14 @@ export const team: TeamMember[] = [
       "Portrait of Dr. Kenya Dugger, Managing Partner & Chief People & Culture Officer.",
     initials: "KD",
     bio: [
-      "Dr. Kenya Dugger is Managing Partner of Morris Consulting Group and its Chief People & Culture Officer. He leads the firm's work at the intersection of organizational culture, executive development, and human capital strategy — the disciplines that determine whether sound strategy is actually carried out.",
-      "His counsel helps leadership teams build the culture, capability, and continuity an institution needs to endure, in service of the firm's conviction that performance follows the character of its people. Full biography forthcoming.",
+      "Dr. Kenya Dugger is a global executive in people and organizational culture. He leads the firm's work on the human side of performance: how organizations recruit, develop, and retain the talent their strategy depends on.",
+      "He has served as a Vice President and Chief Diversity Officer across the public and private sectors, with a career spanning human resources, organizational culture, and diversity, equity, and inclusion. His focus has been talent acquisition, leadership development, and building inclusive workplaces where talent advances.",
+      "He holds a doctorate in Organizational Leadership, teaches as an adjunct professor, and serves on doctoral dissertation committees. He has been featured on U.S. and international podcasts and panels, often on how collectivism and individualism shape inclusion, and he has been recognized among the Top 100 International Diversity Experts.",
     ],
-    bioNote: "Full biography forthcoming.",
     credentials: [
-      "MANAGING PARTNER / MORRIS CONSULTING GROUP",
-      "CHIEF PEOPLE & CULTURE OFFICER",
-      "[CREDENTIALS FORTHCOMING]",
+      "U.S. ARMY / SERGEANT MAJOR (RET.) / 22 YEARS",
+      "LECTURER / GEORGE WASHINGTON & CORNELL UNIVERSITIES",
+      "KEYNOTE SPEAKER / BOARD MEMBER",
     ],
     variant: "standard",
   },

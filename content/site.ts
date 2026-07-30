@@ -38,7 +38,6 @@ export const contactNav: NavItem = { label: "Contact", href: "/contact" };
 
 /** Home hero */
 export const hero = {
-  eyebrow: "— MORRIS CONSULTING GROUP / EST. 2017 / OXFORD, MS",
   statement: "Counsel for leaders navigating what comes next.",
   scrollCue: "Scroll",
 } as const;
@@ -48,7 +47,7 @@ export const intro = {
   label: "THE FIRM",
   number: "01",
   body: [
-    "Morris Consulting Group is a boutique advisory practice. We work with a small number of chief executives and boards of directors on the questions that decide the direction of an enterprise — performance, resilience, and the succession of leadership.",
+    "Morris Consulting Group is an advisory practice. We work with a small number of chief executives and boards of directors on the questions that decide the direction of an enterprise — performance, resilience, and the succession of leadership.",
     "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by counsel who has sat where our clients sit.",
   ],
 } as const;
@@ -97,7 +96,7 @@ export const founderFeature = {
   label: "THE PRINCIPAL",
   number: "03",
   body: [
-    "Morris Consulting Group was founded in 2017 by Sheldon Morris, who brings sixteen years in senior executive and critical staff roles to the firm's counsel.",
+    "Morris Consulting Group was founded by Sheldon Morris, who brings sixteen years in senior executive and critical staff roles to the firm's counsel.",
     "His perspective is shaped by that experience across the nonprofit, for-profit, and banking sectors, and by a conviction that enterprise performance is inseparable from the character of leadership.",
   ],
   cta: { label: "Meet the Team", href: "/team" },
