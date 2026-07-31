@@ -3,8 +3,8 @@
 export const advisoryHeader = {
   eyebrow: "ADVISORY",
   title: "How we advise and coach.",
-  subtitle: "Five practices, held to one standard.",
-  lede: "We work across five related practices, each grounded in a proactive stance: the strongest organizations shape what is coming rather than wait for it, and thrive because they do.",
+  subtitle: "Six practices, held to one standard.",
+  lede: "We work across six related practices, each grounded in a proactive stance: the strongest organizations shape what is coming rather than wait for it, and thrive because they do.",
 } as const;
 
 export type PracticeDetail = {
@@ -36,7 +36,7 @@ export const practiceDetails: PracticeDetail[] = [
     title: "Enterprise Performance & Strategy",
     summary: "Sharpening priorities and the discipline to hold them.",
     body: [
-      "Strategy is a set of choices about where to concentrate finite attention and capital. Its power lies in what it declines to pursue — and its failure, almost always, lies in the discipline of execution.",
+      "Strategy is a set of choices about where to concentrate finite attention and capital. Its power lies in what it declines to pursue, and its failure, almost always, lies in the discipline of execution.",
       "We work alongside leadership to clarify priorities, align resources to them, and build the cadence of review that keeps an organization honest about its own performance.",
     ],
     engagements: [
@@ -51,7 +51,7 @@ export const practiceDetails: PracticeDetail[] = [
     title: "Executive Advisory & Succession",
     summary: "Preparing institutions for their most consequential transitions.",
     body: [
-      "Leadership transitions are the truest test of an institution's health — and they are almost always addressed later than they should be. Succession is not a name chosen under pressure; it is a process begun well in advance.",
+      "Leadership transitions are the truest test of an institution's health, and they are almost always addressed later than they should be. Succession is not a name chosen under pressure; it is a process begun well in advance.",
       "We advise chief executives and boards through succession and executive transition with the care it deserves: developing leaders, assessing readiness honestly, and preparing an organization to be led differently.",
     ],
     engagements: [
@@ -66,7 +66,7 @@ export const practiceDetails: PracticeDetail[] = [
     title: "Organizational Leadership",
     summary: "Building the culture and judgment that performance depends on.",
     body: [
-      "Performance follows character. The culture of an organization — its cadence, its candor, the quality of judgment it rewards — determines whether sound strategy is actually carried out.",
+      "Performance follows character. The culture of an organization, its cadence, its candor, and the quality of judgment it rewards, determines whether sound strategy is actually carried out.",
       "We advise leaders on the human dimensions of enterprise: the development of people, the shaping of culture, and the work of building an institution that grows stronger beyond any one tenure.",
     ],
     engagements: [
@@ -91,6 +91,22 @@ export const practiceDetails: PracticeDetail[] = [
       "Post-crisis review & recovery",
     ],
   },
+  {
+    number: "06",
+    title: "Community & Youth Development",
+    summary:
+      "Strengthening the institutions that shape a community's next generation.",
+    body: [
+      "Communities are shaped by the institutions that prepare their next generation. The strongest of these institutions are led with the same discipline as any enterprise: clarity of purpose, accountability of leadership, and a strategy that extends beyond any one leader's tenure.",
+      "We advise the boards and executives of community and youth-serving enterprises on the direction, discipline, and durability of the work they carry, so the institution grows more capable of its mission with each generation it serves.",
+    ],
+    engagements: [
+      "Board governance & institution-building",
+      "Mission-driven leadership succession",
+      "Program strategy & impact clarity",
+      "Multi-generational institutional planning",
+    ],
+  },
 ];
 
 export const approach = {
@@ -108,7 +124,7 @@ export const approach = {
       number: "02",
       title: "Assess",
       description:
-        "We examine the situation plainly — its structure, its people, and its choices — and form an honest, disinterested read.",
+        "We examine the situation plainly, weighing its structure, its people, and its choices, and form an honest, disinterested read.",
     },
     {
       number: "03",

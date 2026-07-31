@@ -91,6 +91,12 @@ export const practiceAreas: PracticeArea[] = [
     description:
       "The true test of leadership is how an organization holds under strain. We help leaders prepare for disruption before it arrives and steady the enterprise through it, so a crisis tests the institution without defining it.",
   },
+  {
+    number: "06",
+    title: "Community & Youth Development",
+    description:
+      "Communities are shaped by the institutions that prepare their next generation. We advise the boards and executives of community and youth-serving enterprises on the direction, discipline, and durability of the work they carry.",
+  },
 ];
 
 /** Home — Founder feature */

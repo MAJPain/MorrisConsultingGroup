@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLink } from "@/components/ArrowLink";
 import { practiceAreas } from "@/content/site";
 
-/** Section 02 — Practice areas. Four numbered service lines. */
+/** Section 02 — Practice areas. The firm's service lines. */
 export function PracticeAreas() {
   return (
     <section className="bg-bone-white py-24 md:py-36">
@@ -14,12 +14,12 @@ export function PracticeAreas() {
               ADVISORY
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">
-              Five practices, <span className="italic text-warm-brown">one discipline.</span>
+              Six practices, <span className="italic text-warm-brown">one discipline.</span>
             </h2>
           </div>
           <div className="md:col-span-4 md:col-start-9">
             <p className="max-w-sm font-body leading-relaxed text-ink/70">
-              We work across five related practices, each in service of the same
+              We work across six related practices, each in service of the same
               conviction that performance and leadership are inseparable.
             </p>
           </div>
