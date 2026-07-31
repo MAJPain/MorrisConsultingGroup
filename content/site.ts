@@ -48,7 +48,8 @@ export const intro = {
   label: "THE FIRM",
   number: "01",
   body: [
-    "Morris Consulting Group is an executive advisory and coaching practice. We work with a small number of chief executives and boards of directors on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
+    "Morris Consulting Group is an executive advisory and coaching practice. We work with chief executives and boards of directors on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
+    "Our conviction is that the people leading an enterprise, and the potential of the people they lead, are its most consequential resource. Our work is organized around that conviction, and it requires deliberate interaction with leaders at every level responsible for turning the strategy into reality. We work with executive teams and boards on operationalizing the HR function so it delivers what the enterprise actually requires: leaders and teams equipped to produce the results the strategy assumes.",
     "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by advisors who have sat where our clients sit.",
   ],
 } as const;
@@ -122,22 +123,37 @@ export const engagements: Engagement[] = [
   {
     label: "OPERATING MODEL",
     description:
-      "Reworking how a leadership team decides, meets, and holds itself to account.",
+      "A leadership team reworking how it decides, meets, and holds itself to account, with counsel from the firm.",
   },
   {
     label: "SUCCESSION",
     description:
-      "Advising a founder-led enterprise preparing the orderly transition of its chief executive.",
+      "A founder-led enterprise preparing the orderly transition of its chief executive, with the firm advising the board and principal through it.",
+  },
+  {
+    label: "HUMAN CAPITAL",
+    description:
+      "Advising an executive team and board on the deliberate investment in leadership depth and successor readiness, treated as a capital decision rather than a training expense.",
   },
   {
     label: "STRATEGIC CLARITY",
     description:
-      "Advisory to a leadership team resetting priorities ahead of a period of measured growth.",
+      "A leadership team resetting priorities ahead of a period of measured growth, in consultation with the firm.",
+  },
+  {
+    label: "LEADERSHIP",
+    description:
+      "Working with a founder and executive team on the character and cadence of leadership during an inflection in the enterprise.",
+  },
+  {
+    label: "ALIGNMENT",
+    description:
+      "Advising a leadership team on the alignment between the strategy set at the top and the leaders responsible for producing it.",
   },
   {
     label: "RESILIENCE",
     description:
-      "Preparing a leadership team to steer through a period of acute disruption.",
+      "A leadership team preparing to steer through a period of acute disruption, with the firm as counsel.",
   },
 ];
 
