@@ -123,7 +123,7 @@ export const engagements: Engagement[] = [
   {
     label: "OPERATING MODEL",
     description:
-      "A leadership team reworking how it decides, meets, and holds itself to account, with counsel from the firm.",
+      "An executive team reworking how it decides, meets, and holds itself to account, with counsel from the firm.",
   },
   {
     label: "SUCCESSION",
@@ -138,22 +138,22 @@ export const engagements: Engagement[] = [
   {
     label: "STRATEGIC CLARITY",
     description:
-      "A leadership team resetting priorities ahead of a period of measured growth, in consultation with the firm.",
+      "A senior leadership team resetting priorities ahead of a period of measured growth, in consultation with the firm.",
   },
   {
     label: "LEADERSHIP",
     description:
-      "Working with a founder and executive team on the character and cadence of leadership during an inflection in the enterprise.",
+      "Working with an executive director and board on the character and cadence of leadership during an inflection in the enterprise.",
   },
   {
     label: "ALIGNMENT",
     description:
-      "Advising a leadership team on the alignment between the strategy set at the top and the leaders responsible for producing it.",
+      "Advising a chief executive and senior team on the alignment between the strategy set at the top and the leaders responsible for producing it.",
   },
   {
     label: "RESILIENCE",
     description:
-      "A leadership team preparing to steer through a period of acute disruption, with the firm as counsel.",
+      "A board and chief executive preparing to steer the enterprise through a period of acute disruption, with the firm as counsel.",
   },
 ];
 
