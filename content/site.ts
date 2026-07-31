@@ -98,8 +98,9 @@ export const founderFeature = {
   label: "THE PRINCIPAL",
   number: "03",
   body: [
-    "Morris Consulting Group was founded by Sheldon Morris, who brings sixteen years in senior executive and critical staff roles to the firm's advisory work.",
-    "His perspective is shaped by that experience across the nonprofit, for-profit, and banking sectors, and by a conviction that enterprise performance is inseparable from the character of leadership.",
+    "His advisory work began in 2017 by word of mouth, and grew, on demand, into the firm as it operates today.",
+    "He served twenty-two years as a U.S. Army officer, retiring at the rank of Colonel, and has since held senior executive roles across enterprises in the private and social sectors, including engagements with startup founders and the banking industry.",
+    "He has sat where his clients sit, in uniform and out of it, and it is that seat perspective that shapes the firm's advisory work.",
   ],
   cta: { label: "Meet the Team", href: "/team" },
 } as const;
