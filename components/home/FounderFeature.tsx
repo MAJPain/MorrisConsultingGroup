@@ -39,7 +39,7 @@ export function FounderFeature() {
             className="text-editorial-sm font-medium tracking-tight text-bone-white"
           />
           <p className="mt-2 font-mono text-xs uppercase tracking-eyebrow text-soft-brown">
-            Founder & Principal
+            Founder & Senior Partner
           </p>
 
           <ScrollReveal className="mt-8 max-w-prose space-y-6 font-body text-lg leading-relaxed text-bone-white/80">

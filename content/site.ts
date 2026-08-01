@@ -101,7 +101,7 @@ export const practiceAreas: PracticeArea[] = [
 
 /** Home — Founder feature */
 export const founderFeature = {
-  label: "THE PRINCIPAL",
+  label: "THE FOUNDER",
   number: "03",
   body: [
     "His advisory work began in 2017 by word of mouth, and grew, on demand, into the firm as it operates today.",
