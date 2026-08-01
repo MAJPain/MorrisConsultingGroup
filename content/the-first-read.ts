@@ -67,9 +67,9 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "How do you differ from a management consulting firm?",
         answer: [
-          "Management consultants produce strategy documents and implementation plans. Our work sits closer to the chief executive's chair, and we flex from strategy through execution as the engagement requires — from the concept of what to do to the reality of getting it done. We are retained for counsel and coaching, not for frameworks or consultant teams; every engagement is principal-led by design. Our Convictions on the ",
+          "Management consultants produce strategy documents and implementation plans. Our work sits closer to the chief executive's chair, and we flex from strategy through execution as the engagement requires — from the concept of what to do to the reality of getting it done. We are retained for counsel and coaching, not for frameworks or consultant teams; every engagement is principal-led by design. The Philosophy section on the ",
           { text: "About", href: ROUTES.about },
-          " page describe how we think about this work.",
+          " page describes how we think about this work.",
         ],
       },
       {

@@ -19,8 +19,8 @@ export function PracticeAreas() {
           </div>
           <div className="md:col-span-4 md:col-start-9">
             <p className="max-w-sm font-body leading-relaxed text-ink/70">
-              We work across six related practices, each in service of the same
-              conviction that performance and leadership are inseparable.
+              We work across six related practices, each grounded in the same
+              belief: performance and leadership are inseparable.
             </p>
           </div>
         </div>

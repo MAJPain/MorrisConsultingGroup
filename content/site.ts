@@ -50,7 +50,7 @@ export const intro = {
   number: "01",
   body: [
     "Morris Consulting Group is an executive advisory and coaching practice. We work with chief executives and boards of directors on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
-    "Our conviction is that the people leading an enterprise, and the potential of the people they lead, are its most consequential resource. Our work is organized around that conviction, and it requires deliberate interaction with leaders at every level responsible for turning the strategy into reality. We work with executive teams and boards on operationalizing the HR function so it delivers what the enterprise actually requires: leaders and teams equipped to produce the results the strategy assumes.",
+    "We believe the people leading an enterprise, and the potential of the people they lead, are its most consequential resource. Our work is organized around that belief, and it requires deliberate interaction with leaders at every level responsible for turning the strategy into reality. We work with executive teams and boards on operationalizing the HR function so it delivers what the enterprise actually requires: leaders and teams equipped to produce the results the strategy assumes.",
     "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by advisors who have sat where our clients sit.",
   ],
 } as const;
