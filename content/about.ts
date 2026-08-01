@@ -12,8 +12,8 @@ export const story = {
   label: "THE STORY",
   heading: "We began where the stakes are highest.",
   body: [
-    "Morris Consulting Group was founded by Sheldon Morris, drawing on sixteen years in senior executive and critical staff roles. The firm was built to bring the judgment those positions produce to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
-    "We are deliberately small. We take on a limited number of engagements so that each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
+    "Morris Consulting Group was founded by Sheldon Morris in 2017 and is now led in partnership with Dr. Kenya Dugger. Sheldon retired as a Colonel and Kenya as a Sergeant Major, both after twenty-two years in the U.S. Army; between them they carry more than thirty years in senior executive and principal staff roles across the government, private, social, and banking sectors. The firm was built to bring the judgment those positions produce to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
+    "We are deliberately small. Our two-partner roster is the design, not the stage before growth. We take a limited number of engagements so each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
     "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
   ],
 } as const;
@@ -25,9 +25,22 @@ export const philosophy = {
     "Enterprise performance is inseparable from the character of leadership.",
   body: [
     "We do not believe in strategy divorced from the people asked to carry it out, or in oversight reduced to a compliance exercise. The health of an enterprise is finally a question of judgment — of who decides, how they decide, and whether they hold themselves to a standard when no one is watching.",
-    "Our role is to help leaders see their situation plainly and act on it with discipline. We bring candor where candor is scarce, and patience where haste would do harm.",
+    "Our role is to help leaders see their situation plainly and act on it with discipline. We bring candor where candor is scarce, and patience where haste would do harm. We work with leaders across a career — with those running enterprises now, and those who will run them next.",
   ],
 } as const;
+
+/** Scrolling keyword strip on the /about page. Kept separate from the shared
+ *  home marquee (`marqueeItems`) so the two can differ. */
+export const aboutMarquee: string[] = [
+  "OPERATING EFFECTIVENESS",
+  "ENTERPRISE PERFORMANCE",
+  "EXECUTIVE SUCCESSION",
+  "ORGANIZATIONAL LEADERSHIP",
+  "RESILIENCE",
+  "STRATEGY",
+  "COMMUNITY BANKING",
+  "ATHLETIC ADVISING",
+];
 
 export type Value = {
   number: string;

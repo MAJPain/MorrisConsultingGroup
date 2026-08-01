@@ -5,8 +5,14 @@ import { RevealText } from "@/components/RevealText";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Marquee } from "@/components/Marquee";
 import { ContactCtaSection } from "@/components/home/ContactCtaSection";
-import { aboutHeader, story, philosophy, valuesSection, values } from "@/content/about";
-import { marqueeItems } from "@/content/site";
+import {
+  aboutHeader,
+  story,
+  philosophy,
+  valuesSection,
+  values,
+  aboutMarquee,
+} from "@/content/about";
 
 export const metadata: Metadata = {
   title: "About",
@@ -67,7 +73,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Marquee items={marqueeItems} tone="light" durationSeconds={42} />
+      <Marquee items={aboutMarquee} tone="light" durationSeconds={42} />
 
       {/* Values */}
       <section className="bg-bone-white py-24 md:py-36">
