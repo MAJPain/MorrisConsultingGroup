@@ -171,9 +171,9 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What does Athletic Advising cover?",
         answer: [
-          "A sector practice serving athletic organizations from Division I collegiate down through high school, including athletic departments, athletic boards, and youth-serving athletic nonprofits. It covers governance advisory, athletic director and head coach development, NIL-era governance, and athletic board effectiveness. Our partners have competed at high levels, launched athletic ventures, and served in athletic governance — which means we understand what current athletes, coaches, and athletic leaders are contending with because we have been where they are. The ",
+          "A sector practice serving athletic organizations from collegiate through high school and youth development. Our partners have competed at the collegiate level and launched athletic ventures, so we understand the pressures on today's athletes, coaches, and boards — and we work to enable the leaders responsible for them. For the deeper picture, see the ",
           { text: "Athletic Advising", href: ROUTES.athleticAdvising },
-          " practice page describes the work in more depth.",
+          " practice page.",
         ],
       },
       {
