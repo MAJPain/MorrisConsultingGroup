@@ -59,7 +59,7 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What is Morris Consulting Group?",
         answer: [
-          "Morris Consulting Group is an executive advisory and coaching practice, led by Sheldon Morris and Dr. Kenya Dugger. We work with chief executives and boards on the decisions that shape enterprise character, and with the leaders and teams responsible for translating those decisions into operational reality. Every engagement is delivered by the two partners, without junior delegation. The ",
+          "Morris Consulting Group is an executive advisory and coaching practice, led by Sheldon Morris and Dr. Kenya Dugger. We work with chief executives and boards on the decisions that shape enterprise character, and with the leaders and teams responsible for translating those decisions into operational reality. The ",
           { text: "About", href: ROUTES.about },
           " page carries the fuller story of the firm.",
         ],
