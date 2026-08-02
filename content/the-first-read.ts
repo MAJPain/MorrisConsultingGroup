@@ -122,7 +122,7 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What does an engagement typically look like?",
         answer: [
-          "Every engagement is different. Most begin with a confidential scoping conversation to build a shared understanding of what the client aims to accomplish, then move into a defined engagement scoped around the specific work — board effectiveness, executive succession, enterprise performance, or an ongoing advisory retainer. Both partners are involved throughout, and all work is delivered to the client alone. The ",
+          "Every engagement begins with a confidential scoping conversation to build a shared understanding of what the client aims to accomplish, then moves into a defined engagement scoped around the specific work — board effectiveness, executive succession, enterprise performance, or an ongoing advisory retainer. Both partners share responsibility for the engagement; delivery is calibrated to the work, with one partner as the primary advisor and the other engaged where the work calls for it. The ",
           { text: "Our Approach", href: ROUTES.ourApproach },
           " page describes the seven stages behind every engagement in detail.",
         ],
