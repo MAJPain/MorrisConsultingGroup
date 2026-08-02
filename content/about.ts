@@ -38,7 +38,7 @@ export const aboutMarquee: string[] = [
   "ORGANIZATIONAL LEADERSHIP",
   "RESILIENCE",
   "STRATEGY",
-  "COMMUNITY BANKING",
+  "COMMUNITY & REGIONAL BANKING",
   "ATHLETIC ADVISING",
 ];
 

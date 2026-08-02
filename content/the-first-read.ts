@@ -158,13 +158,13 @@ export const firstReadSections: FirstReadSection[] = [
   {
     n: 4,
     name: "OUR SIGNATURE PRACTICES",
-    descriptor: "Community banking and athletic advising.",
+    descriptor: "Community and regional banking, and athletic advising.",
     items: [
       {
-        question: "What is your Community Banking Support practice?",
+        question: "What is your Community & Regional Banking Support practice?",
         answer: [
-          "A specialty practice built around the fiduciary and regulatory requirements community bank boards operate under. It is anchored by real director-level experience in community bank governance and formal credentialing in the regulatory frameworks these boards navigate. The practice covers board effectiveness reviews, committee charter development, regulatory governance preparation, and director development, with work coordinated alongside qualified counsel where the scope requires it. For the deeper picture, see the ",
-          { text: "Community Banking Support", href: ROUTES.communityBanking },
+          "A specialty practice centered on independent director service for US community and regional bank boards. We bring the objective oversight, constructive challenge, and commercial judgment these boards require to navigate their fiduciary duties and the sector's regulatory frameworks. For the deeper picture, see the ",
+          { text: "Community & Regional Banking Support", href: ROUTES.communityBanking },
           " practice page.",
         ],
       },
@@ -181,7 +181,7 @@ export const firstReadSections: FirstReadSection[] = [
         answer: [
           "Yes. Our core practices — Executive & Board Advisory and ",
           { text: "Leader & Organization Development", href: ROUTES.leaderOrgDev },
-          " — serve chief executives and boards across every sector we work with. The signature practices exist because community banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. Every other buyer is served by the core practices. The ",
+          " — serve chief executives and boards across every sector we work with. The signature practices exist because community and regional banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. Every other buyer is served by the core practices. The ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page shows the full practice architecture.",
         ],
