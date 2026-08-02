@@ -107,7 +107,7 @@ export const firstReadSections: FirstReadSection[] = [
         question:
           "Do you work with nonprofit and public-sector organizations?",
         answer: [
-          "Yes. Both partners hold or have held nonprofit board seats and bring senior public-sector executive experience across social and civic institutions. Our combined service spans youth development, community impact, and civic governance, giving us genuine breadth across the sector. Nonprofit and public-sector engagements are governed by the same principles as any other — private, unhurried, partner-led — with pricing calibrated to the sector. The ",
+          "Yes. Both partners have served at senior levels within nonprofit organizations and on nonprofit boards, and in public-sector leadership. We work with these organizations under the same principles that guide every engagement — the executive team and the board alike. The ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page shows how the practice extends to your sector.",
         ],
