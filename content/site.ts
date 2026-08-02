@@ -33,10 +33,10 @@ export const nav: NavItem[] = [
   {
     label: "Advisory",
     href: "/advisory",
-    // "How We Engage" and "Our Approach" resolve to /advisory until those
-    // dedicated pages exist; "Working With Us" is the live drill-down page.
+    // "How We Engage" and "Working With Us" are live pages; "Our Approach"
+    // resolves to /advisory until its dedicated page exists.
     children: [
-      { label: "How We Engage", href: "/advisory" },
+      { label: "How We Engage", href: "/how-we-engage" },
       { label: "Our Approach", href: "/advisory" },
       { label: "Working With Us", href: "/how-we-engage/working-with-us" },
     ],

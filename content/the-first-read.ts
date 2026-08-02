@@ -21,18 +21,18 @@ export type FirstReadSection = {
 };
 
 /**
- * Cross-page link targets. `/how-we-engage` and its sub-pages do not exist in
- * this codebase yet; `/advisory` is the live equivalent, so the whole family
- * resolves there until those routes are created. Change these in one place if
- * the pages are added later.
+ * Cross-page link targets. `/how-we-engage` and `workingWithUs` are live pages;
+ * the remaining `/how-we-engage` sub-pages do not exist yet, so `/advisory` is
+ * the live equivalent for those until the dedicated routes are created. Change
+ * these in one place if the pages are added later.
  */
 const ROUTES = {
   about: "/about",
   team: "/team",
   contact: "/contact",
-  howWeEngage: "/advisory",
+  howWeEngage: "/how-we-engage",
   ourApproach: "/advisory",
-  workingWithUs: "/advisory",
+  workingWithUs: "/how-we-engage/working-with-us",
   communityBanking: "/advisory",
   athleticAdvising: "/advisory",
   leaderOrgDev: "/advisory",
