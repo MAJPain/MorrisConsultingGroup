@@ -98,7 +98,7 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What services do you not provide?",
         answer: [
-          "We do not provide legal, tax, audit, or investment advice. We do not conduct executive search or provide interim executive placement. We do not implement operational programs. Where the scope calls for one of these, we work alongside qualified counsel or firms rather than in place of them. What we do offer is described on the ",
+          "MCG's practice does not include legal, tax, audit, or investment advice, executive search, interim executive placement, or operational program implementation. Where an engagement calls for one of these, we work alongside qualified counsel and firms as partners. What we do offer is described on the ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page.",
         ],
