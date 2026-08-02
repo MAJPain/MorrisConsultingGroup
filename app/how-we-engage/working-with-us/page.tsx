@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SectionLabel } from "@/components/SectionLabel";
+import { PageHeader } from "@/components/PageHeader";
 import { RuleDivider } from "@/components/RuleDivider";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLink } from "@/components/ArrowLink";
 import {
   wwuHeader,
@@ -48,49 +49,50 @@ function InlineNodes({ nodes }: { nodes: WwuInline[] }) {
 export default function WorkingWithUsPage() {
   return (
     <>
-      {/* Header — same top-of-page pattern as /about and /the-first-read */}
-      <header className="container pb-10 pt-36 md:pb-14 md:pt-48">
-        <SectionLabel as="p" className="mb-8">
-          {wwuHeader.rail}
-        </SectionLabel>
-        <h1 className="max-w-[16ch] text-editorial font-medium tracking-[-0.02em] text-deep-blue">
-          {wwuHeader.title}
-        </h1>
-        <p className="mt-8 max-w-prose font-body text-lg leading-relaxed text-ink/75">
-          {wwuHeader.subtitle}
-        </p>
-      </header>
+      <PageHeader
+        eyebrow={wwuHeader.eyebrow}
+        title={wwuHeader.title}
+        subtitle={wwuHeader.subtitle}
+        lede={wwuHeader.lede}
+      />
 
+      {/* Sections — two-column: rail + descriptor left, body right (matches /about) */}
       {wwuSections.map((section) => (
         <section key={section.n} className="container py-12 md:py-16">
-          <h2 className="eyebrow flex items-center gap-2">
-            <span aria-hidden="true">—</span>
-            <span>{`SECTION ${section.n} · ${section.name}`}</span>
-          </h2>
-          <RuleDivider className="mt-5" />
-          <div className="mt-8 max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink/80">
-            {section.body.map((para, i) => (
-              <p key={i}>
-                <InlineNodes nodes={para} />
+          <div className="grid grid-cols-1 gap-y-8 md:grid-cols-12 md:gap-x-8">
+            <div className="md:col-span-4">
+              <h2 className="eyebrow flex items-center gap-2">
+                <span aria-hidden="true">—</span>
+                <span>{`SECTION ${section.n} · ${section.name}`}</span>
+              </h2>
+              <RuleDivider className="mt-5" />
+              <p className="mt-6 max-w-xs font-display text-xl font-light italic text-warm-brown">
+                {section.descriptor}
               </p>
-            ))}
+            </div>
+
+            <ScrollReveal className="max-w-prose space-y-5 font-body text-lg leading-relaxed text-ink/80 md:col-span-7 md:col-start-6">
+              {section.body.map((para, i) => (
+                <p key={i}>
+                  <InlineNodes nodes={para} />
+                </p>
+              ))}
+            </ScrollReveal>
           </div>
         </section>
       ))}
 
-      {/* Footer */}
+      {/* Closing bridge + CTA footer */}
       <section className="container pb-28 pt-8 md:pb-40">
-        <div className="border-t border-warm-brown/25 pt-14">
-          <p className="max-w-prose font-display text-2xl font-light italic leading-snug text-deep-blue md:text-3xl">
-            <InlineNodes nodes={wwuFooter.line} />
-          </p>
-          <div className="mt-8">
-            <ArrowLink href={wwuFooter.cta.href}>
-              <span className="uppercase tracking-wide">
-                {wwuFooter.cta.label}
-              </span>
-            </ArrowLink>
-          </div>
+        <p className="max-w-3xl font-display text-2xl font-light italic leading-snug text-deep-blue md:text-3xl">
+          <InlineNodes nodes={wwuFooter.line} />
+        </p>
+        <div className="mt-8">
+          <ArrowLink href={wwuFooter.cta.href}>
+            <span className="uppercase tracking-wide">
+              {wwuFooter.cta.label}
+            </span>
+          </ArrowLink>
         </div>
       </section>
     </>

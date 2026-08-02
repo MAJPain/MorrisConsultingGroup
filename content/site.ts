@@ -74,39 +74,27 @@ export type PracticeArea = {
 export const practiceAreas: PracticeArea[] = [
   {
     number: "01",
-    title: "Operating Effectiveness",
+    title: "Executive & Board Advisory",
     description:
-      "A capable strategy still depends on how a leadership team runs. We work with the executive team on how it decides, where authority sits, and the operating cadence that turns intent into results.",
+      "We advise chief executives and boards on the decisions that set an enterprise's direction — performance, governance, and the succession of leadership. The counsel is private and delivered by the partners themselves.",
   },
   {
     number: "02",
-    title: "Enterprise Performance & Strategy",
+    title: "Leader & Organization Development",
     description:
-      "Strategy is only as sound as the discipline behind it. We work alongside leadership to sharpen priorities, align resources, and hold the organization to the standard it has set for itself.",
+      "We coach and develop leaders, their teams, and the organizations around them. This is the human side of performance: the depth an enterprise relies on to carry out its strategy.",
   },
   {
     number: "03",
-    title: "Executive Advisory & Succession",
+    title: "Community & Regional Banking Support",
     description:
-      "Leadership transitions are the truest test of an institution. We advise executives and boards through succession with the care it deserves, well before the need becomes urgent.",
+      "We provide independent director service and board counsel to US community and regional banks, meeting the fiduciary and regulatory demands these boards carry.",
   },
   {
     number: "04",
-    title: "Organizational Leadership",
+    title: "Athletic Advising",
     description:
-      "Performance follows character. We advise on the culture, cadence, and human judgment that turn a capable organization into a durable one.",
-  },
-  {
-    number: "05",
-    title: "Resilience & Crisis Leadership",
-    description:
-      "The true test of leadership is how an organization holds under strain. We help leaders prepare for disruption before it arrives and steady the enterprise through it, so a crisis tests the institution without defining it.",
-  },
-  {
-    number: "06",
-    title: "Community & Youth Development",
-    description:
-      "Communities are shaped by the institutions that prepare their next generation. We advise the boards and executives of community and youth-serving enterprises on the direction, discipline, and durability of the work they carry.",
+      "We work with educational institutions, and with families directly, on the whole-person development of student-athletes: the transitions they face, the pressures they carry, and the culture that shapes them.",
   },
 ];
 

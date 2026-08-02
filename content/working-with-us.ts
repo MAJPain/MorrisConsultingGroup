@@ -13,19 +13,22 @@ export type WwuInline =
 export type WwuSection = {
   n: number;
   name: string;
+  descriptor: string; // italic serif line under the section rail
   body: WwuInline[][]; // paragraphs, each an array of inline nodes
 };
 
 export const wwuHeader = {
-  rail: "WORKING WITH US",
+  eyebrow: "WORKING WITH US",
   title: "Working with us.",
-  subtitle: "How engagements begin, what they include, and how we operate.",
+  subtitle: "Engagement, in plain terms.",
+  lede: "How engagements begin, what they include, and how we operate.",
 } as const;
 
 export const wwuSections: WwuSection[] = [
   {
     n: 1,
     name: "BEGINNING AN ENGAGEMENT",
+    descriptor: "How we agree to work together.",
     body: [
       [
         "Every engagement begins with a private conversation. Reach out through the ",
@@ -43,6 +46,7 @@ export const wwuSections: WwuSection[] = [
   {
     n: 2,
     name: "STRUCTURE AND DELIVERY",
+    descriptor: "Two structures. One delivery model.",
     body: [
       ["MCG offers two engagement structures."],
       [
@@ -61,6 +65,7 @@ export const wwuSections: WwuSection[] = [
   {
     n: 3,
     name: "FEES AND PRICING",
+    descriptor: "How we price. What we're compensated for.",
     body: [
       [
         "Fees are discussed during scoping and set in writing before work begins.",
@@ -79,6 +84,7 @@ export const wwuSections: WwuSection[] = [
   {
     n: 4,
     name: "OUR COMPENSATION POSITION",
+    descriptor: "Why we decline contingent fees.",
     body: [
       [
         "MCG accepts no equity, no success fees, and no contingent compensation.",
@@ -91,6 +97,7 @@ export const wwuSections: WwuSection[] = [
   {
     n: 5,
     name: "TRAVEL AND EXPENSES",
+    descriptor: "Actual, reasonable, at cost.",
     body: [
       [
         "When an engagement requires travel to the client's location, we bill actual, reasonable expenses at cost. No markup. No administrative fee.",
@@ -106,6 +113,7 @@ export const wwuSections: WwuSection[] = [
   {
     n: 6,
     name: "CONFIDENTIALITY",
+    descriptor: "The condition of the work.",
     body: [
       ["Confidentiality is the condition of the work, not a policy."],
       [

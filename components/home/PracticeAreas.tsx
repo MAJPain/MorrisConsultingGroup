@@ -14,12 +14,12 @@ export function PracticeAreas() {
               ADVISORY
             </SectionLabel>
             <h2 className="text-editorial-sm font-medium tracking-tight text-deep-blue">
-              Six practices, <span className="italic text-warm-brown">one discipline.</span>
+              Four practices, <span className="italic text-warm-brown">one architecture.</span>
             </h2>
           </div>
           <div className="md:col-span-4 md:col-start-9">
             <p className="max-w-sm font-body leading-relaxed text-ink/70">
-              We work across six related practices, each grounded in the same
+              We work across four related practices, each grounded in the same
               belief: performance and leadership are inseparable.
             </p>
           </div>
@@ -41,7 +41,7 @@ export function PracticeAreas() {
         </div>
 
         <div className="mt-12">
-          <ArrowLink href="/advisory">Explore the practice</ArrowLink>
+          <ArrowLink href="/how-we-engage">Explore the practice</ArrowLink>
         </div>
       </div>
     </section>
