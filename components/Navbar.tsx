@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Monogram } from "@/components/Monogram";
 import { Magnetic } from "@/components/Magnetic";
@@ -58,6 +58,45 @@ export function Navbar() {
           <ul className="flex items-center gap-8">
             {nav.map((item) => {
               const active = pathname === item.href;
+
+              if (item.children) {
+                return (
+                  <li key={item.href} className="group relative">
+                    <Link
+                      href={item.href}
+                      aria-haspopup="true"
+                      className={cn(
+                        "link-underline inline-flex items-center gap-1 font-body text-sm transition-colors duration-500",
+                        solid ? "text-ink" : "text-bone-white",
+                        active && "after:scale-x-100"
+                      )}
+                    >
+                      {item.label}
+                      <ChevronDown
+                        size={13}
+                        aria-hidden="true"
+                        className="text-warm-brown transition-transform duration-300 group-hover:translate-y-0.5"
+                      />
+                    </Link>
+
+                    <div className="pointer-events-none absolute left-0 top-full z-10 pt-3 opacity-0 transition-opacity duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+                      <ul className="min-w-[14rem] border border-warm-brown/20 bg-bone-white py-2 shadow-[0_12px_40px_-12px_rgba(11,37,69,0.25)]">
+                        {item.children.map((child) => (
+                          <li key={child.label}>
+                            <Link
+                              href={child.href}
+                              className="block px-5 py-2.5 font-body text-sm text-ink transition-colors duration-300 hover:text-warm-brown focus-visible:text-warm-brown"
+                            >
+                              {child.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </li>
+                );
+              }
+
               return (
                 <li key={item.href}>
                   <Link
@@ -138,6 +177,26 @@ function MobileMenu({ open }: { open: boolean }) {
                   >
                     {item.label}
                   </Link>
+                  {item.children && (
+                    <ul className="mb-2 ml-1 flex flex-col border-l border-warm-brown/25 pl-5">
+                      {item.children.map((child) => {
+                        const childActive = pathname === child.href;
+                        return (
+                          <li key={child.label}>
+                            <Link
+                              href={child.href}
+                              className={cn(
+                                "block py-2 font-body text-base text-ink/70 transition-colors",
+                                childActive && "text-warm-brown"
+                              )}
+                            >
+                              {child.label}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
                 </li>
               );
             })}

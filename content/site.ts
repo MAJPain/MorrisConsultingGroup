@@ -25,12 +25,22 @@ export const firm = {
   phone: "",
 } as const;
 
-export type NavItem = { label: string; href: string };
+export type NavItem = { label: string; href: string; children?: NavItem[] };
 
 export const nav: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "The First Read", href: "/the-first-read" },
-  { label: "Advisory", href: "/advisory" },
+  {
+    label: "Advisory",
+    href: "/advisory",
+    // "How We Engage" and "Our Approach" resolve to /advisory until those
+    // dedicated pages exist; "Working With Us" is the live drill-down page.
+    children: [
+      { label: "How We Engage", href: "/advisory" },
+      { label: "Our Approach", href: "/advisory" },
+      { label: "Working With Us", href: "/how-we-engage/working-with-us" },
+    ],
+  },
   { label: "Team", href: "/team" },
   { label: "Insights", href: "/insights" },
 ];
