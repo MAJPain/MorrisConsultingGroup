@@ -136,7 +136,7 @@ export const engagements: Engagement[] = [
   {
     label: "SUCCESSION",
     description:
-      "A founder-led enterprise preparing the orderly transition of its chief executive, with the firm advising the board and principal through it.",
+      "A founder-owned company preparing the orderly transition of its chief executive, with the firm advising the board and principal through it.",
   },
   {
     label: "HUMAN CAPITAL",

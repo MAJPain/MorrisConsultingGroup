@@ -90,7 +90,7 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What kinds of organizations do you work with?",
         answer: [
-          "Our clients lead nonprofits and foundations, higher education, family-owned and founder-led enterprises, mission-driven institutions, public-sector agencies, community banks, and athletic organizations. We work primarily with chief executives and boards, and with the leaders coming up behind them who will run the enterprise next. The ",
+          "Our clients lead nonprofits and foundations, higher education, privately held enterprises, health systems, public-sector agencies, community banks, and athletic organizations. We work primarily with chief executives and boards, and with the leaders coming up behind them who will run the enterprise next. The ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page describes the practice architecture in fuller detail.",
         ],
@@ -105,9 +105,9 @@ export const firstReadSections: FirstReadSection[] = [
       },
       {
         question:
-          "Do you work with mission-driven and public-sector organizations?",
+          "Do you work with nonprofit and public-sector organizations?",
         answer: [
-          "Yes. Both partners hold or have held nonprofit board seats and bring senior public-sector executive experience across mission-driven institutions. Our combined service spans youth development, community impact, and civic governance, giving us genuine breadth across the sector. Mission-driven engagements are governed by the same principles as any other — private, unhurried, partner-led — with pricing calibrated to the sector. The ",
+          "Yes. Both partners hold or have held nonprofit board seats and bring senior public-sector executive experience across social and civic institutions. Our combined service spans youth development, community impact, and civic governance, giving us genuine breadth across the sector. Nonprofit and public-sector engagements are governed by the same principles as any other — private, unhurried, partner-led — with pricing calibrated to the sector. The ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page shows how the practice extends to your sector.",
         ],
@@ -181,7 +181,7 @@ export const firstReadSections: FirstReadSection[] = [
         answer: [
           "Yes. Our core practices — Executive & Board Advisory and ",
           { text: "Leader & Organization Development", href: ROUTES.leaderOrgDev },
-          " — are how we serve chief executives and boards across every sector we work with, from nonprofits and higher education to family-owned enterprises and mission-driven institutions. The signature practices sit alongside the core, existing because community and regional banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. See the ",
+          " — are how we serve chief executives and boards across every sector we work with, from nonprofits and higher education to privately held enterprises and health systems. The signature practices sit alongside the core, existing because community and regional banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. See the ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
           " page for the full practice architecture.",
         ],

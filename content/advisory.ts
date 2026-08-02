@@ -102,7 +102,7 @@ export const practiceDetails: PracticeDetail[] = [
     ],
     engagements: [
       "Board governance & institution-building",
-      "Mission-driven leadership succession",
+      "Social leadership succession",
       "Program strategy & impact clarity",
       "Multi-generational institutional planning",
     ],
