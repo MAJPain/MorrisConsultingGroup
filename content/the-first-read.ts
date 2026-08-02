@@ -122,9 +122,9 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "What does an engagement typically look like?",
         answer: [
-          "Every engagement begins with a confidential scoping conversation to build a shared understanding of what the client aims to accomplish, then moves into a defined engagement scoped around the specific work — board effectiveness, executive succession, enterprise performance, or an ongoing advisory retainer. Both partners share responsibility for the engagement; delivery is calibrated to the work, with one partner as the primary advisor and the other engaged where the work calls for it. The ",
+          "Every engagement begins with a confidential scoping conversation, then moves into a defined engagement scoped around the specific work. Both partners share responsibility; one leads delivery as the primary advisor, the other engages where the work calls for it. The ",
           { text: "Our Approach", href: ROUTES.ourApproach },
-          " page describes the seven stages behind every engagement in detail.",
+          " page describes the seven stages in detail.",
         ],
       },
       {
@@ -148,9 +148,9 @@ export const firstReadSections: FirstReadSection[] = [
         answer: [
           "Yes. Individual executive coaching sits within our ",
           { text: "Leader & Organization Development", href: ROUTES.leaderOrgDev },
-          " practice and is delivered by one of the partners, not by an associate. Following the norms of the discipline, we begin with a chemistry conversation and a structured assessment — 360 feedback, executive assessment instruments, and structured interviews — to establish a baseline and define the desired outcomes. Coaching engagements run on a defined basis, typically six to twelve months at a bi-weekly cadence; confidentiality between coach and coachee is absolute, and where an organizational sponsor is involved, we agree upfront on how goals and progress reviews will be shared. The ",
+          " practice and is delivered by one of the partners. Engagements typically run six to twelve months at a bi-weekly cadence, with confidentiality between coach and coachee absolute and any sponsor arrangement agreed upfront. The ",
           { text: "Leader & Organization Development", href: ROUTES.leaderOrgDev },
-          " page carries the fuller detail on our coaching practice.",
+          " page describes the practice in detail.",
         ],
       },
     ],
