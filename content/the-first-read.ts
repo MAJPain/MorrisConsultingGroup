@@ -75,7 +75,7 @@ export const firstReadSections: FirstReadSection[] = [
       {
         question: "Why is MCG a two-partner firm?",
         answer: [
-          "Because senior counsel and coaching cannot be delegated. Both partners come from twenty-two-year Army careers and additional decades in senior executive and principal staff roles. Together we lead both the strategic and human sides of every engagement. The two-partner roster is the design, not the stage before growth. Their full backgrounds sit on the ",
+          "Because at this level, counsel and coaching require senior practitioners. Both partners retired from twenty-two-year Army careers that included senior executive and principal staff roles, and carried that experience directly into civilian leadership. Together the partners lead both the strategic and human sides of every engagement. The two-partner roster is the design, not the stage before growth. Their full backgrounds sit on the ",
           { text: "Team", href: ROUTES.team },
           " page.",
         ],
