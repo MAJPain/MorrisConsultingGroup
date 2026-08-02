@@ -181,9 +181,9 @@ export const firstReadSections: FirstReadSection[] = [
         answer: [
           "Yes. Our core practices — Executive & Board Advisory and ",
           { text: "Leader & Organization Development", href: ROUTES.leaderOrgDev },
-          " — serve chief executives and boards across every sector we work with. The signature practices exist because community and regional banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. Every other buyer is served by the core practices. The ",
+          " — are how we serve chief executives and boards across every sector we work with, from nonprofits and higher education to family-owned enterprises and mission-driven institutions. The signature practices sit alongside the core, existing because community and regional banking and athletic advising each carry regulatory frameworks or sector-specific requirements that reward specialization. See the ",
           { text: "How We Engage", href: ROUTES.howWeEngage },
-          " page shows the full practice architecture.",
+          " page for the full practice architecture.",
         ],
       },
     ],
