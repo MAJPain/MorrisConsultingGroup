@@ -31,7 +31,7 @@ export type HweGroup = {
 const ROUTES = {
   executiveAndBoardAdvisory: "/how-we-engage", // → /how-we-engage/executive-and-board-advisory
   leaderAndOrgDevelopment: "/how-we-engage", // → /how-we-engage/leader-and-organization-development
-  communityAndRegionalBanking: "/how-we-engage", // → /how-we-engage/community-and-regional-banking-support
+  communityAndRegionalBanking: "/how-we-engage/community-and-regional-banking-support",
   athleticAdvising: "/how-we-engage", // → /how-we-engage/athletic-advising
   workingWithUs: "/how-we-engage/working-with-us",
 } as const;
