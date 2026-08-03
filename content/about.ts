@@ -1,5 +1,10 @@
 /** Copy for the /about page. */
 
+import type { MarqueeItem } from "@/components/Marquee";
+
+/** A Story paragraph node: plain text, or an inline link. */
+export type StoryInline = string | { text: string; href: string };
+
 export const aboutHeader = {
   eyebrow: "ABOUT",
   title: "A firm built on judgment.",
@@ -12,10 +17,18 @@ export const story = {
   label: "THE STORY",
   heading: "We began where the stakes are highest.",
   body: [
-    "Morris Consulting Group was founded by Sheldon Morris in 2017 and is now led in partnership with Dr. Kenya Dugger. Sheldon retired as a Colonel and Kenya as a Sergeant Major, both after twenty-two years in the U.S. Army; between them they carry more than thirty years in senior executive and principal staff roles across the government, private, social, and banking sectors. The firm was built to bring the judgment those positions produce to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
-    "We are deliberately small. Our two-partner roster is the design, not the stage before growth. We take a limited number of engagements so each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
-    "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
-  ],
+    [
+      "Morris Consulting Group was founded by Sheldon Morris in 2017 and is now led in partnership with Dr. Kenya Dugger. Both partners bring more than three decades of strategic and operational experience across sectors, detailed on the ",
+      { text: "Team page", href: "/team" },
+      ". The firm was built to bring the judgment that experience produces to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
+    ],
+    [
+      "We are deliberately small. Our two-partner roster is the design, not the stage before growth. We take a limited number of engagements so each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
+    ],
+    [
+      "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
+    ],
+  ] as StoryInline[][],
 } as const;
 
 export const philosophy = {
@@ -29,17 +42,26 @@ export const philosophy = {
   ],
 } as const;
 
-/** Scrolling keyword strip on the /about page. Kept separate from the shared
- *  home marquee (`marqueeItems`) so the two can differ. */
-export const aboutMarquee: string[] = [
-  "OPERATING EFFECTIVENESS",
-  "ENTERPRISE PERFORMANCE",
-  "EXECUTIVE SUCCESSION",
-  "ORGANIZATIONAL LEADERSHIP",
-  "RESILIENCE",
-  "STRATEGY",
-  "COMMUNITY & REGIONAL BANKING",
-  "ATHLETIC ADVISING",
+/** Practice bar on the /about page — the four current practices, each linking
+ *  to its detail page. Kept separate from the shared home marquee
+ *  (`marqueeItems`) so the two can differ. */
+export const aboutMarquee: MarqueeItem[] = [
+  {
+    label: "EXECUTIVE & BOARD ADVISORY",
+    href: "/how-we-engage/executive-and-board-advisory",
+  },
+  {
+    label: "LEADER & ORGANIZATION DEVELOPMENT",
+    href: "/how-we-engage/leader-and-organization-development",
+  },
+  {
+    label: "COMMUNITY & REGIONAL BANKING SUPPORT",
+    href: "/how-we-engage/community-and-regional-banking-support",
+  },
+  {
+    label: "ATHLETIC ADVISING",
+    href: "/how-we-engage/athletic-advising",
+  },
 ];
 
 export type Value = {

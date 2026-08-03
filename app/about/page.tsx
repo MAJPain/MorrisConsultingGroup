@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RevealText } from "@/components/RevealText";
@@ -12,6 +13,7 @@ import {
   valuesSection,
   values,
   aboutMarquee,
+  type StoryInline,
 } from "@/content/about";
 
 export const metadata: Metadata = {
@@ -19,6 +21,25 @@ export const metadata: Metadata = {
   description:
     "Morris Consulting Group is an advisory firm built to bring the judgment of senior executive experience to chief executives and boards.",
 };
+
+function StoryNodes({ nodes }: { nodes: StoryInline[] }) {
+  return (
+    <>
+      {nodes.map((node, i) => {
+        if (typeof node === "string") return <span key={i}>{node}</span>;
+        return (
+          <Link
+            key={i}
+            href={node.href}
+            className="text-deep-blue underline decoration-warm-brown/50 underline-offset-4 transition-colors hover:decoration-warm-brown focus-visible:decoration-warm-brown"
+          >
+            {node.text}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -43,7 +64,9 @@ export default function AboutPage() {
           </div>
           <ScrollReveal className="max-w-prose space-y-6 font-body text-lg leading-relaxed text-ink/80 md:col-span-7 md:col-start-6">
             {story.body.map((para, i) => (
-              <p key={i}>{para}</p>
+              <p key={i}>
+                <StoryNodes nodes={para} />
+              </p>
             ))}
           </ScrollReveal>
         </div>
