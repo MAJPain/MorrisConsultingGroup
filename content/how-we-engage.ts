@@ -29,7 +29,7 @@ export type HweGroup = {
  * detail pages are added later.
  */
 const ROUTES = {
-  executiveAndBoardAdvisory: "/how-we-engage", // → /how-we-engage/executive-and-board-advisory
+  executiveAndBoardAdvisory: "/how-we-engage/executive-and-board-advisory",
   leaderAndOrgDevelopment: "/how-we-engage", // → /how-we-engage/leader-and-organization-development
   communityAndRegionalBanking: "/how-we-engage/community-and-regional-banking-support",
   athleticAdvising: "/how-we-engage/athletic-advising",
@@ -58,10 +58,10 @@ export const hweGroups: HweGroup[] = [
     practices: [
       {
         name: "Executive & Board Advisory",
-        descriptor: "Advisory to CEOs and boards on decisions that matter.",
+        descriptor: "For the decision makers who carry the weight.",
         body: [
           [
-            "For chief executives and boards, on the decisions that matter most. See the ",
+            "For decision makers responsible for consequential outcomes at the executive and board level. See the ",
             {
               text: "Executive & Board Advisory",
               href: ROUTES.executiveAndBoardAdvisory,

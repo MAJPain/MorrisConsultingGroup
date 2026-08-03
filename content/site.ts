@@ -59,9 +59,9 @@ export const intro = {
   label: "THE FIRM",
   number: "01",
   body: [
-    "Morris Consulting Group is an executive advisory and coaching practice. We work with chief executives and boards of directors on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
+    "Morris Consulting Group is an executive advisory and coaching practice. We work with decision makers on the questions that decide the direction of an enterprise: performance, resilience, and the succession of leadership.",
     "We believe the people leading an enterprise, and the potential of the people they lead, are its most consequential resource. Our work is organized around that belief, and it requires deliberate interaction with leaders at every level responsible for turning the strategy into reality. We work with executive teams and boards on operationalizing the HR function so it delivers what the enterprise actually requires: leaders and teams equipped to produce the results the strategy assumes.",
-    "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by advisors who have sat where our clients sit.",
+    "Our engagements are private and unhurried. We are retained not for volume but for judgment: a considered second read on the decisions that matter most, offered by advisors who understand the weight of leadership.",
   ],
 } as const;
 
@@ -78,18 +78,21 @@ export const practiceAreas: PracticeArea[] = [
   {
     number: "01",
     title: "Executive & Board Advisory",
+    href: "/how-we-engage/executive-and-board-advisory",
     description:
       "We advise chief executives and boards on the decisions that set an enterprise's direction — performance, governance, and the succession of leadership. The counsel is private and delivered by the partners themselves.",
   },
   {
     number: "02",
     title: "Leader & Organization Development",
+    href: "/how-we-engage",
     description:
       "We coach and develop leaders, their teams, and the organizations around them. This is the human side of performance: the depth an enterprise relies on to carry out its strategy.",
   },
   {
     number: "03",
     title: "Community & Regional Banking Support",
+    href: "/how-we-engage/community-and-regional-banking-support",
     description:
       "We provide independent director service and board counsel to US community and regional banks, meeting the fiduciary and regulatory demands these boards carry.",
   },
