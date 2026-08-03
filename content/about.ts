@@ -23,7 +23,7 @@ export const story = {
       ". The firm was built to bring the judgment that experience produces to the leaders it advises and coaches: clear thinking under pressure, an instinct for consequence, and respect for the institutions leaders are entrusted with.",
     ],
     [
-      "We are deliberately small. Our two-partner roster is the design, not the stage before growth. We take a limited number of engagements so each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
+      "We are deliberately small. Partner-led delivery, no associates, no delivery pyramids. We take a limited number of engagements so each receives the attention it deserves. Our clients retain us not for scale but for judgment, and for the confidence that what is said in the room stays there.",
     ],
     [
       "The work is quiet. It rarely produces a press release. But it is the work by which sound institutions are built and stewarded — and it is the only work we do.",
