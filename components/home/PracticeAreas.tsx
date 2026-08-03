@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLink } from "@/components/ArrowLink";
@@ -30,7 +31,16 @@ export function PracticeAreas() {
             <ScrollReveal key={area.number}>
               <article className="group grid grid-cols-1 gap-x-8 gap-y-4 border-b border-warm-brown/20 py-10 md:grid-cols-12 md:py-12">
                 <h3 className="font-display text-3xl font-medium leading-tight text-deep-blue transition-colors duration-500 group-hover:text-warm-brown md:col-span-6 md:text-4xl">
-                  {area.title}
+                  {area.href ? (
+                    <Link
+                      href={area.href}
+                      className="underline decoration-warm-brown/40 underline-offset-[6px] transition-colors hover:decoration-warm-brown focus-visible:decoration-warm-brown"
+                    >
+                      {area.title}
+                    </Link>
+                  ) : (
+                    area.title
+                  )}
                 </h3>
                 <p className="max-w-prose font-body leading-relaxed text-ink/70 md:col-span-5 md:col-start-8">
                   {area.description}

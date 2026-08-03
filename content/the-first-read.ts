@@ -33,8 +33,8 @@ const ROUTES = {
   howWeEngage: "/how-we-engage",
   ourApproach: "/advisory",
   workingWithUs: "/how-we-engage/working-with-us",
-  communityBanking: "/advisory",
-  athleticAdvising: "/advisory",
+  communityBanking: "/how-we-engage/community-and-regional-banking-support",
+  athleticAdvising: "/how-we-engage/athletic-advising",
   leaderOrgDev: "/advisory",
 } as const;
 

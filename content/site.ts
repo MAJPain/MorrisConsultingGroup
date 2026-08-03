@@ -69,6 +69,9 @@ export type PracticeArea = {
   number: string;
   title: string;
   description: string;
+  /** When set, the title links to the practice's detail page. Omitted while a
+   *  practice still falls back to /how-we-engage. */
+  href?: string;
 };
 
 export const practiceAreas: PracticeArea[] = [
@@ -93,6 +96,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     number: "04",
     title: "Athletic Advising",
+    href: "/how-we-engage/athletic-advising",
     description:
       "We work with educational institutions, and with families directly, on the whole-person development of student-athletes: the transitions they face, the pressures they carry, and the culture that shapes them.",
   },
