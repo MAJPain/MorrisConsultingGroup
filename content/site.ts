@@ -33,11 +33,9 @@ export const nav: NavItem[] = [
   {
     label: "Advisory",
     href: "/how-we-engage",
-    // "How We Engage" and "Working With Us" are live pages; "Our Approach"
-    // falls back to /how-we-engage until its dedicated page exists.
     children: [
       { label: "How We Engage", href: "/how-we-engage" },
-      { label: "Our Approach", href: "/how-we-engage" },
+      { label: "Our Approach", href: "/our-approach" },
       { label: "Working With Us", href: "/how-we-engage/working-with-us" },
     ],
   },

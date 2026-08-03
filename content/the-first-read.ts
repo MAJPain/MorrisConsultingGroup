@@ -21,16 +21,15 @@ export type FirstReadSection = {
 };
 
 /**
- * Cross-page link targets. All four practice detail pages and Working With Us
- * are live; `ourApproach` falls back to `/how-we-engage` until its dedicated
- * page exists. Change these in one place if that page is added later.
+ * Cross-page link targets. All four practice detail pages, Working With Us, and
+ * Our Approach are live. Change these in one place if a target route moves.
  */
 const ROUTES = {
   about: "/about",
   team: "/team",
   contact: "/contact",
   howWeEngage: "/how-we-engage",
-  ourApproach: "/how-we-engage",
+  ourApproach: "/our-approach",
   workingWithUs: "/how-we-engage/working-with-us",
   communityBanking: "/how-we-engage/community-and-regional-banking-support",
   athleticAdvising: "/how-we-engage/athletic-advising",
