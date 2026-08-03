@@ -21,21 +21,20 @@ export type FirstReadSection = {
 };
 
 /**
- * Cross-page link targets. `/how-we-engage` and `workingWithUs` are live pages;
- * the remaining `/how-we-engage` sub-pages do not exist yet, so `/advisory` is
- * the live equivalent for those until the dedicated routes are created. Change
- * these in one place if the pages are added later.
+ * Cross-page link targets. All four practice detail pages and Working With Us
+ * are live; `ourApproach` falls back to `/how-we-engage` until its dedicated
+ * page exists. Change these in one place if that page is added later.
  */
 const ROUTES = {
   about: "/about",
   team: "/team",
   contact: "/contact",
   howWeEngage: "/how-we-engage",
-  ourApproach: "/advisory",
+  ourApproach: "/how-we-engage",
   workingWithUs: "/how-we-engage/working-with-us",
   communityBanking: "/how-we-engage/community-and-regional-banking-support",
   athleticAdvising: "/how-we-engage/athletic-advising",
-  leaderOrgDev: "/advisory",
+  leaderOrgDev: "/how-we-engage/leader-and-organization-development",
 } as const;
 
 export const firstReadHeader = {

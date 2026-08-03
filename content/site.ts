@@ -32,12 +32,12 @@ export const nav: NavItem[] = [
   { label: "The First Read", href: "/the-first-read" },
   {
     label: "Advisory",
-    href: "/advisory",
+    href: "/how-we-engage",
     // "How We Engage" and "Working With Us" are live pages; "Our Approach"
-    // resolves to /advisory until its dedicated page exists.
+    // falls back to /how-we-engage until its dedicated page exists.
     children: [
       { label: "How We Engage", href: "/how-we-engage" },
-      { label: "Our Approach", href: "/advisory" },
+      { label: "Our Approach", href: "/how-we-engage" },
       { label: "Working With Us", href: "/how-we-engage/working-with-us" },
     ],
   },
@@ -85,7 +85,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     number: "02",
     title: "Leader & Organization Development",
-    href: "/how-we-engage",
+    href: "/how-we-engage/leader-and-organization-development",
     description:
       "We coach and develop leaders, their teams, and the organizations around them. This is the human side of performance: the depth an enterprise relies on to carry out its strategy.",
   },
