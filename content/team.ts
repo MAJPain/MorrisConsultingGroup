@@ -18,6 +18,7 @@ export type TeamMember = {
   credentials?: string[]; // monospace list
   pullQuote?: string;
   linkedin?: string; // profile URL
+  email?: string; // direct address; rendered as a mailto: link
   variant: TeamVariant;
 };
 
@@ -49,6 +50,7 @@ export const team: TeamMember[] = [
     pullQuote:
       "Enterprise performance is inseparable from the character of leadership.",
     linkedin: "https://www.linkedin.com/in/sheldon-morris/",
+    email: "smorris@morrisconsultinggroup.org",
     variant: "full",
   },
   {
@@ -71,6 +73,7 @@ export const team: TeamMember[] = [
       "KEYNOTE SPEAKER / BOARD MEMBER",
     ],
     linkedin: "https://www.linkedin.com/in/kenya-dugger/",
+    email: "kdugger@morrisconsultinggroup.org",
     variant: "standard",
   },
   {

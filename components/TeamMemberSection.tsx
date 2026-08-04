@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { TeamMember } from "@/content/team";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -65,16 +65,29 @@ export function TeamMemberSection({ member, index }: TeamMemberSectionProps) {
             </h2>
           )}
 
-          {member.linkedin && (
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-eyebrow text-warm-brown transition-colors hover:text-soft-brown focus-visible:text-soft-brown"
-            >
-              <Linkedin size={15} aria-hidden="true" />
-              LinkedIn
-            </a>
+          {(member.email || member.linkedin) && (
+            <div className="mt-5 flex flex-col gap-3">
+              {member.email && (
+                <a
+                  href={`mailto:${member.email}`}
+                  className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-eyebrow text-warm-brown transition-colors hover:text-soft-brown focus-visible:text-soft-brown"
+                >
+                  <Mail size={15} aria-hidden="true" />
+                  Email
+                </a>
+              )}
+              {member.linkedin && (
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 self-start font-mono text-xs uppercase tracking-eyebrow text-warm-brown transition-colors hover:text-soft-brown focus-visible:text-soft-brown"
+                >
+                  <Linkedin size={15} aria-hidden="true" />
+                  LinkedIn
+                </a>
+              )}
+            </div>
           )}
 
           {/* Bio */}
