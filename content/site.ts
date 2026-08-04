@@ -3,6 +3,8 @@
  * Edit here — components read from these exports.
  */
 
+import type { MarqueeItem } from "@/components/Marquee";
+
 /**
  * Web3Forms access key for the contact form. This value is PUBLIC by design —
  * it is embedded in the client bundle and only permits sending mail to the
@@ -110,19 +112,29 @@ export const founderFeature = {
   body: [
     "His advisory work began in 2017 by word of mouth, and grew, on demand, into the firm as it operates today.",
     "He served twenty-two years as a U.S. Army officer, retiring at the rank of Colonel, and has since held senior executive roles across enterprises in the private and social sectors, including engagements with startup founders and the banking industry.",
-    "He has sat where his clients sit, in uniform and out of it, and it is that seat perspective that shapes the firm's advisory work.",
+    "He understands the weight of leadership from carrying it himself, in uniform and out of it, and it is that perspective that shapes the firm's advisory work.",
   ],
   cta: { label: "Meet the Team", href: "/team" },
 } as const;
 
-/** Marquee strip */
-export const marqueeItems: string[] = [
-  "OPERATING EFFECTIVENESS",
-  "ENTERPRISE PERFORMANCE",
-  "EXECUTIVE SUCCESSION",
-  "ORGANIZATIONAL LEADERSHIP",
-  "RESILIENCE",
-  "STRATEGY",
+/** Marquee strip — the four current practices, each linking to its detail page. */
+export const marqueeItems: MarqueeItem[] = [
+  {
+    label: "EXECUTIVE & BOARD ADVISORY",
+    href: "/how-we-engage/executive-and-board-advisory",
+  },
+  {
+    label: "LEADER & ORGANIZATION DEVELOPMENT",
+    href: "/how-we-engage/leader-and-organization-development",
+  },
+  {
+    label: "COMMUNITY & REGIONAL BANKING SUPPORT",
+    href: "/how-we-engage/community-and-regional-banking-support",
+  },
+  {
+    label: "ATHLETIC ADVISING",
+    href: "/how-we-engage/athletic-advising",
+  },
 ];
 
 export type Engagement = {
